@@ -1,0 +1,4 @@
+name: Clockwork
+markdown: redcarpet
+pygments: true
+permalink: /:year/:month/:title.html
