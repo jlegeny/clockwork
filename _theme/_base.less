@@ -345,6 +345,9 @@ and more scalable.
 
 				>code {
 					background:darken(@content-background, 15%);
+					-webkit-hyphens:none;
+					hyphens:none;
+					word-break:break-all;
 				}
 
 			}
@@ -419,23 +422,21 @@ and more scalable.
 				height: auto;
 			}
 
-			.highlight {;
 
-				pre {
+			pre {
 
+				border-radius: 5px;
+				padding:0;
+
+				code.hljs {
+					display: block;
 					border-radius: 5px;
-					padding:0;
-
-					code {
-						display: block;
-						border-radius: 5px;
-						white-space: pre;
-						overflow-x: auto;
-						-webkit-overflow-scrolling: touch;
-						overflow-scrolling: touch;
-						padding: 0.5em;
-						line-height: 1.5;
-					}
+					white-space: pre;
+					overflow-x: auto;
+					-webkit-overflow-scrolling: touch;
+					overflow-scrolling: touch;
+					padding: 0.5em;
+					line-height: 1.5;
 				}
 			}
 
