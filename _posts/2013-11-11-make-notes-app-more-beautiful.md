@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Make Notes.app more beautiful"
-date:   2013-11-11 15:59:00
-categories: enhancement
+date:   2013-11-11 15:59:51
+categories: Hacks
 tags:
 - Mavericks
 - Notes.app
@@ -36,8 +36,7 @@ And 'lo my new Notes.app look:
 
 I've made a quick mod to patch the files. You can grab it here:
 
-abutton cat="Archive" action="Download" label="Notes.app Mod"
-[Mod for Notes.app v1][2]
+[Mod for Notes.app v1][2]{%download Notes.app Mod%}
 
  [1]: /images/Notes.app.png
  [2]: /files/Notes.app-Mod-v1.zip

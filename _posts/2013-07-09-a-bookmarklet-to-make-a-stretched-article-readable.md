@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "A bookmarklet to make a stretched article readable"
-date:   2013-07-09 11:21:00
-categories: knacks
+date:   2013-07-09 11:21:33
+categories: Knacks
 tags:
-- Bookmarklet
-- Readability
-- Web
+- bookmarklet
+- readability
+- web
 ---
 
 There are many tools like [Readability][1] or [Evernote Clearly][2] to make any arbitrary article readable and they are very good at their job.
