@@ -2,10 +2,14 @@ name: Clockwork
 description: Stuff I make and say
 url: http://clockwork.fr
 markdown: kramdown
+include:     ['.htaccess']
 
 highlighter: pygments
 pygments: true
 permalink: /:year/:month/:title.html
+paginate: 5
+#paginate_path: "blog/page:num"
+
 
 kramdown:
   auto_ids: true
@@ -16,10 +20,4 @@ kramdown:
   use_coderay: false
   input: GFM
 
-  coderay:
-    coderay_wrap: div
-    coderay_line_numbers: inline
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: style
+  

@@ -15,4 +15,4 @@ module Jekyll
   end
 end
 
-Liquid::Template.register_tag('download_button', Jekyll::DownloadButtonTag)
+Liquid::Template.register_tag('download', Jekyll::DownloadButtonTag)
