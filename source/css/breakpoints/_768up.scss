@@ -24,8 +24,9 @@ LAYOUT & GRID STYLES
 *********************/
 
 .wrap {
-	max-width: 1140px;
+  max-width: 1140px;
 }
+
 
 /*********************
 HEADER STYLES
@@ -40,7 +41,6 @@ NAVIGATION STYLES
 *********************/
 
 .nav {
-	background: #eee;
 	border: 0;
 	ul {
 		margin-top:0;
@@ -57,7 +57,8 @@ NAVIGATION STYLES
 			has the possibility of being a mobile device.
 			*/
 			&:hover, &:focus {
-				background-color: #dedede;
+				color: $white;
+				text-decoration: underline;
 			}
 		}
 
@@ -112,7 +113,7 @@ NAVIGATION STYLES
 			/* highlight sub-menu current page */
 			li.current-menu-item,
 			li.current_page_item,
-			li.current_page_ancestor {
+			li.current-page-ancestor {
 				a {}
 			}
 		}
@@ -129,7 +130,7 @@ NAVIGATION STYLES
 	/* highlight current page */
 	li.current-menu-item,
 	li.current_page_item,
-	li.current_page_ancestor {
+	li.current-page-ancestor {
 		a {}
 	}  /* end current highlighters */
 
@@ -142,9 +143,7 @@ SIDEBARS & ASIDES
 .sidebar {
 }
 
-	.widgettitle {
-		margin-bottom: 0.75em;
-	}
+	.widgettitle { }
 
 	.widget {
 		padding: 0 10px;
@@ -157,7 +156,7 @@ SIDEBARS & ASIDES
 				&:first-child {}
 				&:last-child {}
 				a {
-					text-decoration:none;
+					text-decoration: none;
 				}
 				/* deep nesting */
 
