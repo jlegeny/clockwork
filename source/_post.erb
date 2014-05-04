@@ -1,0 +1,21 @@
+<article class="clearfix" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="article-header"> 
+   <h1 class="h2"><%= link_to article.title, article %></h1>
+   <p class="byline vcard"><time class="updated" datetime="<%= article.date.strftime('%Y-%m-%d') %>" pubdate><%= article.date.strftime('%Y-%m-%d') %></time></p>
+   </header>
+   <section class="entry-content clearfix">
+    <%= article.body %>
+  </section>
+
+  <footer class="article-footer">
+    <p class="tags">
+      <% article.tags.each do |tag| %>
+      <% if tag != "" %>
+      <%= link_to tag, tag_path(tag) %>
+      <% end %>
+      <% end %>
+    </p>
+  </footer>
+
+</article>

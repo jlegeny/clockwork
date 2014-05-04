@@ -1,4 +1,6 @@
-_site
-css/main.css
-index.sublime-project
-index.sublime-workspace
+/build
+/Gemfile
+/Gemfile.lock
+/.sass
+/.cache
+/.DS_Store
