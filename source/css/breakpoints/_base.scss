@@ -453,7 +453,6 @@ POSTS & CONTENT STYLES
 			}
 
 			/* Buttons taken from Twitter Bootstrap */
-
 			.btn {
 				-moz-border-bottom-colors: none;
 				-moz-border-left-colors: none;
@@ -479,12 +478,12 @@ POSTS & CONTENT STYLES
 				color: $invert-color;
 				text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 				text-decoration:none !important;
+				&:hover {
+					background:#0044cc;
+					color:$invert-color !important;
+				}
 			}
 
-			.btn:hover {
-				background:#0044cc;
-				color:$invert-color !important;
-			}
 
 		} /* end .entry-content */
 

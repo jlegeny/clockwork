@@ -3,7 +3,7 @@
 
   <header class="article-header"> 
    <h1 class="h2"><%= link_to current_page.title, current_page %></h1>
-   <p class="byline vcard"><time class="updated" datetime="<%= current_page.date.strftime('%Y-%m-%d') %>" pubdate><%= current_page.date.strftime('%Y-%m-%d') %></time></p>
+   <p class="byline vcard"><time class="updated" datetime="<%= current_page.date.strftime('%Y-%m-%d') %>"><%= current_page.date.strftime('%Y-%m-%d') %></time></p>
    </header>
    <section class="entry-content clearfix">
     <%= yield %>

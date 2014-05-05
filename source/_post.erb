@@ -2,7 +2,7 @@
 
   <header class="article-header"> 
    <h1 class="h2"><%= link_to article.title, article %></h1>
-   <p class="byline vcard"><time class="updated" datetime="<%= article.date.strftime('%Y-%m-%d') %>" pubdate><%= article.date.strftime('%Y-%m-%d') %></time></p>
+   <p class="byline vcard"><time class="updated" datetime="<%= article.date.strftime('%Y-%m-%d') %>"><%= article.date.strftime('%Y-%m-%d') %></time></p>
    </header>
    <section class="entry-content clearfix">
     <%= article.body %>
