@@ -1,6 +1,8 @@
 ---
+layout: post
 title: Moving to static website
 date: 2014-05-05 21:54 UTC
+categories: Slice of Life
 tags:
 ---
 
