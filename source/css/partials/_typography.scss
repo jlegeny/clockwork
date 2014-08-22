@@ -49,9 +49,10 @@ I've edited it a bit, but it's a nice starting point.
 
 
 // font stacks
-$sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+$sans-serif:        "AvenirNext-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif:             "Georgia", Cambria, Times New Roman, Times, serif;
-$header-font:       "AvenirNext-Regular", "HelveticaNeue-Light", Helvetica, Arial, sans-serif;  
+$header-font:       "AvenirNext-Regular", "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+$monospace:					"Consolas", "Menlo", monospace;
 
 /*
  i imported this one in the functions file so bones would look sweet.

@@ -313,6 +313,7 @@ POSTS & CONTENT STYLES
 				*/
 
 				>code {
+					font-family:$monospace;
 					background:darken($content-background, 15%);
 					-webkit-hyphens:none;
 					hyphens:none;
