@@ -7,9 +7,8 @@
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   # blog.prefix = "blog"
-  blog.permalink = ":year/:month/:title.html"
-  blog.sources = "/posts/:year-:month-:day-:title.html"
-  # blog.permalink = "{year}/{month}/{day}/{title}.html"
+  blog.permalink = ":year/:month/:title"
+  blog.sources = "/posts/:year-:month-:day-:title"
   # Matcher for blog source files
   # blog.sources = "{year}-{month}-{day}-{title}.html"
   # blog.taglink = "tags/{tag}.html"
@@ -20,6 +19,7 @@ activate :blog do |blog|
   # blog.month_link = "{year}/{month}.html"
   # blog.day_link = "{year}/{month}/{day}.html"
   blog.default_extension = ".md"
+  blog.new_article_template = "source/templates/post.erb"
 
   blog.tag_template = "tag.html"
   blog.calendar_template = "calendar.html"
@@ -88,6 +88,8 @@ set :css_dir, 'css'
 set :js_dir, 'js'
 
 set :images_dir, 'images'
+
+ignore 'templates/*'
 
 activate :directory_indexes
 
