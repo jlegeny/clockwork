@@ -9,11 +9,15 @@ tags:
 - pork
 ---
 
-More food from my production. Tested, eaten and tasty. This food does not require much ingredients and should be pretty quick to prepare (if you are good at multitasking then about 20 minutes)
+More food from my production. Tested, eaten and tasty. This food does not
+require much ingredients and should be pretty quick to prepare (if you are good
+at multitasking then about 20 minutes)
 
 ## Ingredients
 
-As always, we will have to do some shopping before cooking anything. Depending on what you already have you can get this for about 6€ for two doses. So go and get these:
+As always, we will have to do some shopping before cooking anything. Depending
+on what you already have you can get this for about 6€ for two doses. So go and
+get these:
 
 ![ingredients]
 
@@ -49,15 +53,25 @@ Before cooking comes washing and cutting
 
 ### First stage
 
-First we will cook the mushrooms. Put the crushed piece of garlic into salted water (not much just enough to have the mushrooms covered) and make it boil. Then add mushrooms (both) and cook for about three minutes.
+First we will cook the mushrooms. Put the crushed piece of garlic into salted
+water (not much just enough to have the mushrooms covered) and make it boil.
+Then add mushrooms (both) and cook for about three minutes.
 
 ![cooking-mushrooms]
 
-At the same time put some oil onto a frying pan, heat it and add sliced garlic. When it turns brownish add the meat and fry it for a while. Add pepper. When the crust from cornstarch appears add mushrooms and some water (use the mushroomy water). After a while add carrots and leek. Cook for several minutes stirring all the time. Add some more water from mushrooms from time to time. At the same time (this is when multitasking comes handy) make the noodles (for cooking method refer to the package)
+At the same time put some oil onto a frying pan, heat it and add sliced garlic.
+When it turns brownish add the meat and fry it for a while. Add pepper. When
+the crust from cornstarch appears add mushrooms and some water (use the
+mushroomy water). After a while add carrots and leek. Cook for several minutes
+stirring all the time. Add some more water from mushrooms from time to time. At
+the same time (this is when multitasking comes handy) make the noodles (for
+cooking method refer to the package)
 
 ### Second stage
 
-Put some oil into a wok and add onions. Put noodles into the wok add soy sauce and fry them for a while (mix them well). After a while add the meat and some more water. Cook for several minutes.
+Put some oil into a wok and add onions. Put noodles into the wok add soy sauce
+and fry them for a while (mix them well). After a while add the meat and some
+more water. Cook for several minutes.
 
 ![cooking-meat-1]
 ![cooking-meat-2]

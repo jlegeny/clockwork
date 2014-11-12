@@ -10,7 +10,9 @@ tags:
 - zip
 ---
 
-During the OpenViBE releases I found myself to repeat this procedure ad nauseum. So I made a little script that does the thing automatically. I will just leave it here for future reference:
+During the OpenViBE releases I found myself to repeat this procedure ad
+nauseum. So I made a little script that does the thing automatically. I will
+just leave it here for future reference:
 
     #!/usr/bin/perl
     

@@ -10,11 +10,16 @@ tags:
 - TV shows
 ---
 
-I got finally fed up with the Unity-like checkboxes on my favourite [TV-show tracking site][1]. Quick roundup: these checkboxes are represented by a box with a grey checkmark when unchecked and a box with green checkmark when checked.
+I got finally fed up with the Unity-like checkboxes on my favourite [TV-show
+tracking site][1]. Quick roundup: these checkboxes are represented by a box
+with a grey checkmark when unchecked and a box with green checkmark when
+checked.
 
-Not only is this horrible for colorblind people, it also drives sane persons nuts.
+Not only is this horrible for colorblind people, it also drives sane persons
+nuts.
 
-If you use Stylish extension for firefox, or some alternative for your browser then you can use this snippet to replace them with standard controls:
+If you use Stylish extension for firefox, or some alternative for your browser
+then you can use this snippet to replace them with standard controls:
 
     @namespace url(http://www.w3.org/1999/xhtml);
     

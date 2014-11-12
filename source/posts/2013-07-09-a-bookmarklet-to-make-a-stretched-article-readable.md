@@ -9,11 +9,16 @@ tags:
 - web
 ---
 
-There are many tools like [Readability][1] or [Evernote Clearly][2] to make any arbitrary article readable and they are very good at their job.
+There are many tools like [Readability][1] or [Evernote Clearly][2] to make any
+arbitrary article readable and they are very good at their job.
 
-Sometimes however you do not want to get rid of all of the formatting and sometimes they simply just do not work, e.g., on web forums.
+Sometimes however you do not want to get rid of all of the formatting and
+sometimes they simply just do not work, e.g., on web forums.
 
-One thing you can find all over the Internet is pages stretched from side to side, and they are all but readable on larger screens. Of course with responsive design you can just resize your browser but that is not what you want to do all of the time.
+One thing you can find all over the Internet is pages stretched from side to
+side, and they are all but readable on larger screens. Of course with
+responsive design you can just resize your browser but that is not what you
+want to do all of the time.
 
 Here is a handy bookmarklet that will 'columnize' any webpage:
 

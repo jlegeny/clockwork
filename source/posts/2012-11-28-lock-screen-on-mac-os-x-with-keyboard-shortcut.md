@@ -10,7 +10,11 @@ tags:
 - security
 ---
 
-One of the issues that rises the most eyebrows while using Mac OS X is that there is no native way of simply locking your screen with a keyboard shortcut. Finally I have managed to compile all of the stuff on the Internet to come up with a simple yet *real* solution to this problem If you can not be bothered by reading the whole article here is the short version:
+One of the issues that rises the most eyebrows while using Mac OS X is that
+there is no native way of simply locking your screen with a keyboard shortcut.
+Finally I have managed to compile all of the stuff on the Internet to come up
+with a simple yet *real* solution to this problem If you can not be bothered by
+reading the whole article here is the short version:
 
 1.  Run **Keychain Access** go to **Preferences → General → Show keychain status in menubar**.
 2.  Look at [this tutorial][1]. 
@@ -20,30 +24,48 @@ And now for the long version.
 
 ## Introduction
 
-There are a lot of ways to work around this problem and many of them were already published on a zillion of blogs. In practice four methods prevail:
+There are a lot of ways to work around this problem and many of them were
+already published on a zillion of blogs. In practice four methods prevail:
 
-1.  Setting the system to lock immediately upon launching the screensaver and then using the **ctrl+⇧+⏏** (control+shift+eject) shortcut.
-2.  Enabling the Keychain Access menu item and then choosing **lock screen** from the menu (by mouse).
+1.  Setting the system to lock immediately upon launching the screensaver and
+    then using the **ctrl+⇧+⏏** (control+shift+eject) shortcut.
+2.  Enabling the Keychain Access menu item and then choosing **lock screen**
+    from the menu (by mouse).
 3.  Enabling the multiple user login and then switching user.
 4.  Using a third party software, such as Quicksilver or Alfred.
 
-Of course these methods have all some benefits and some drawbacks. When we look at them we can easily spot that only the option two actually does what we want: it locks the screen without closing the session, it is native and it *has* to be invoked by the user. However it does not use the feedback, so fails to satisfy the primary objective.
+Of course these methods have all some benefits and some drawbacks. When we look
+at them we can easily spot that only the option two actually does what we want:
+it locks the screen without closing the session, it is native and it *has* to
+be invoked by the user. However it does not use the feedback, so fails to
+satisfy the primary objective.
 
 ## The real solution
 
-It is extremely simple to assign a keyboard shortcut to any item in the application menu. Sadly, the task bar is not considered part of it and the keyboard shortcuts will not reach it. Enter AppleScript and Automator, solution to any problem there is! It took some digging but there actually **is** an AppleScript which clicks on menu items. With that we can create a service that will then be available thorough a global shortcut.
+It is extremely simple to assign a keyboard shortcut to any item in the
+application menu. Sadly, the task bar is not considered part of it and the
+keyboard shortcuts will not reach it. Enter AppleScript and Automator, solution
+to any problem there is! It took some digging but there actually **is** an
+AppleScript which clicks on menu items. With that we can create a service that
+will then be available thorough a global shortcut.
 
 ### Preliminary
 
-In order for this to work you need to enable the Keychain Access menu item. Run **Keychain Access** go to **Preferences → General → Show keychain status in menubar**,
+In order for this to work you need to enable the Keychain Access menu item. Run
+**Keychain Access** go to **Preferences → General → Show keychain status in
+menubar**,
 
 ### Implementation
 
-The path from a script to a service to a keyboard shortcut is already paved. I have already covered how to [assign a global keyboard shortcut to a script][1] so please refer to that.
+The path from a script to a service to a keyboard shortcut is already paved. I
+have already covered how to [assign a global keyboard shortcut to a script][1]
+so please refer to that.
 
 ### The script
 
-The actual script to use is taken from [freespace's github page][2] and is actually based on an example provided by Apple itself. For the sake of consistency, here is the script:
+The actual script to use is taken from [freespace's github page][2] and is
+actually based on an example provided by Apple itself. For the sake of
+consistency, here is the script:
 
     tell application "System Events"
         get properties

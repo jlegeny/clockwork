@@ -8,6 +8,7 @@ tags:
 - publications
 ---
 
-I have updated my [biography page][1]. I have added a link to my PRESENCE paper and citation for the T:CIAIG one.
+I have updated my [biography page][1]. I have added a link to my PRESENCE paper
+and citation for the T:CIAIG one.
 
  [1]: /pages/Biography.html "Biography"

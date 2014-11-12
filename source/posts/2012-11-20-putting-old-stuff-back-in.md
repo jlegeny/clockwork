@@ -7,4 +7,6 @@ tags:
 - 
 ---
 
-I have decided to re-publish the old articles from my old Chyrp blog here. I have not got to it before as I was too lazy. Not that anybody cares but at least it will look like there is something here.
+I have decided to re-publish the old articles from my old Chyrp blog here. I
+have not got to it before as I was too lazy. Not that anybody cares but at
+least it will look like there is something here.
