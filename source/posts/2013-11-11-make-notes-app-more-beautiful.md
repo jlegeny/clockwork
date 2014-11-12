@@ -34,7 +34,7 @@ And 'lo my new Notes.app look:
 
 I've made a quick mod to patch the files. You can grab it here:
 
-[Mod for Notes.app v1][2]<%= partial(:download_button, :locals => {:title => 'Notes.app Mod'}) %>
+[Mod for Notes.app v1][2]{: .btn}
 
  [1]: /images/Notes.app.png
  [2]: /files/Notes.app-Mod-v1.zip
