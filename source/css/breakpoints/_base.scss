@@ -20,7 +20,7 @@ body {
 	font-size: 100%;
 	line-height: 1.5;
 	color: $text-color;
-	background-color: $content-background;
+	background-color: $page-background;
     /*-webkit-font-smoothing: antialiased;*/
 }
 
@@ -255,7 +255,8 @@ POSTS & CONTENT STYLES
 *********************/
 
 #content {
-	margin-top: 1.5em;
+	padding-top: 1.5em;
+  background-color: $content-background;
 }
 
 		.hentry {
