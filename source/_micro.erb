@@ -1,0 +1,10 @@
+<article class="clearfix" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="article-header"> 
+    <p class="byline vcard"><time class="updated" datetime="<%= article.date.strftime('%Y-%m-%d') %>"><%= article.date.strftime('%Y-%m-%d') %></time></p>
+  </header>
+  <section class="entry-content clearfix microblog">
+    <%= article.body %>
+  </section>
+
+</article>
