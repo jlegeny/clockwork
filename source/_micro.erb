@@ -1,9 +1,9 @@
-<article class="clearfix" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+<article role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="article-header"> 
-    <p class="byline vcard"><time class="updated" datetime="<%= article.date.strftime('%Y-%m-%d') %>"><%= article.date.strftime('%Y-%m-%d') %></time></p>
+    <p><% link_to article do %><time datetime="<%= article.date.strftime('%Y-%m-%d') %>"><%= article.date.strftime('%Y-%m-%d') %></time><% end %></p>
   </header>
-  <section class="entry-content clearfix microblog">
+  <section>
     <%= article.body %>
   </section>
 

@@ -1,87 +1,64 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Clockwork<%= ' - ' + current_article.title unless current_article.nil? %></title>
-  <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
+<meta charset="utf-8" />
+<title>Clockwork<%= ' - ' + current_article.title unless current_article.nil? %></title>
+<%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
 
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <link rel="apple-touch-icon" href="/css/images/apple-icon-touch.png">
-  <link rel="icon" href="/favicon.png?v=2">
-  <!--[if IE]> <link rel="shortcut icon" href="/favicon.ico"> <![endif]-->
-  <meta name="msapplication-TileColor" content="#f01d4f">
-  <meta name="msapplication-TileImage" content="/css/images/win8-tile-icon.png">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/bigfoot-default.css">
-  <link rel="stylesheet" href="/css/zenburn.css">
-  <script type="text/javascript" src="/js/highlight.pack.js"></script>
-  <script type="text/javascript" src="/js/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" src="/js/bigfoot.min.js"></script>
-  <script type="text/javascript" src="/js/clockwork.js"></script>
+<link rel="apple-touch-icon" href="/css/images/apple-icon-touch.png">
+<link rel="icon" href="/favicon.png?v=2">
+<!--[if IE]> <link rel="shortcut icon" href="/favicon.ico"> <![endif]-->
+<meta name="msapplication-TileColor" content="#f01d4f">
+<meta name="msapplication-TileImage" content="/css/images/win8-tile-icon.png">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/bigfoot-default.css">
+<link rel="stylesheet" href="/css/zenburn.css">
+<script type="text/javascript" src="/js/highlight.pack.js"></script>
+<script type="text/javascript" src="/js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="/js/bigfoot.min.js"></script>
+<script type="text/javascript" src="/js/clockwork.js"></script>
 
 </head>
 <body>
-  <div id="container">
-    <header class="header" role="banner">
-      <div id="inner-header" class="wrap clearfix">
-        <p id="logo" class="h1"><a href="/" rel="nofollow">Clockwork</a></p>
-      </div>
-    </header>
+<header class="branding" class="header" role="banner">
+	<p class="h1"><a href="/" rel="nofollow">Clockwork</a></p>
+</header>
 
-    <div id="content">
-      <div id="inner-content" class="wrap clearfix">
-        <div id="main" class="eightcol first clearfix" role="main">
-          <%= yield %>
-        </div>
-        <aside class="sidebar fourcol last clearfix" role="complementary">
+<div id="content">
+	<div id="main" class="" role="main">
+		<%= yield %>
+	</div>
+	<aside id="sidebar" class="" role="complementary">
 
-          <div class="widget widget_pages">
-            <h4 class="widgettitle">Pages</h4>
-            <ul>
-              <li class="page_item"><a href="/pages/About/">About Me</a></li>
-              <li class="page_item"><a href="/pages/Biography/">Biography</a></li>
-              <li class="page_item"><a href="/pages/Downloads/">Downloads</a></li>
-            </ul>
-          </div>
-          <div class="widget widget_text">
-            <h4 class="widgettitle">Social</h4>
-            <div class="textwidget">
-              <a href="http://twitter.com/ytwoz">
-                <div class="icon64 icon-twitter"></div>
-              </a>
-              <a href="http://instagram.com/ytwoz">
-                <div class="icon64 icon-instagram"></div>
-              </a>
-            </div>
-          </div>
+		<h4>Pages</h4>
+		<ul>
+			<li><a href="/pages/About/">About Me</a></li>
+			<li><a href="/pages/Biography/">Biography</a></li>
+			<li><a href="/pages/Downloads/">Downloads</a></li>
+		</ul>
+		<h4>Social</h4>
+		<a href="http://twitter.com/ytwoz"><img src="/css/images/twitter.svg" alt="twitter"/></a>
+		<a href="http://instagram.com/ytwoz"><img src="/css/images/instagram.svg" alt="instagram"/></a>
+		<a href="http://github.com/jlegeny"><img src="/css/images/github.svg" alt="github"/></a>
 
-        </aside>
+	</aside>
 
-      </div>
-    </div>
-    <footer class="footer" role="contentinfo">
+</div>
+<footer class="branding" role="contentinfo">
+	<p class="copyright"><small>&copy; <%= Time.now.year %> Clockwork</small></p>
+	<p><small><em>Powered by <a href="http://middleman.app">Middleman</a>, <a href="http://themble.com/bones/">Bones</a>, <a href="http://www.bigfootjs.com/">Bigfoot</a> and <a href="http://jquery.com">jQuery</a></em></small></p>
 
-      <div id="inner-footer" class="wrap clearfix">
-
-        <p class="source-org copyright">&copy; <%= Time.now.year %> Clockwork</p>
-        <p>
-          <small><em>Powered by <a href="http://middleman.app">Middleman</a>, <a href="http://themble.com/bones/">Bones</a>, <a href="http://www.bigfootjs.com/">Bigfoot</a> and <a href="http://jquery.com">jQuery</a></em></small>
-        </p>
-
-      </div>
+</footer>
 
 
-    </footer>
-
-  </div>
-
-  <script type="text/javascript">
-    hljs.initHighlightingOnLoad();
-    $.bigfoot();
-  </script>
+<script type="text/javascript">
+hljs.initHighlightingOnLoad();
+$.bigfoot();
+</script>
 
 </body>
 

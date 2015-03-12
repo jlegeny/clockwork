@@ -1,10 +1,10 @@
 <% wrap_layout :layout do %>
-<article class="clearfix" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+<article role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="article-header">
-   <p class="byline vcard"><time class="updated" datetime="<%= current_page.date.strftime('%Y-%m-%d') %>"><%= current_page.date.strftime('%Y-%m-%d') %></time></p>
+   <p><time datetime="<%= current_page.date.strftime('%Y-%m-%d') %>"><%= current_page.date.strftime('%Y-%m-%d') %></time></p>
    </header>
-   <section class="entry-content clearfix">
+   <section>
     <%= yield %>
   </section>
 
