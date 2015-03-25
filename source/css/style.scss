@@ -1,6 +1,6 @@
 $sans-serif:        "HelveticaNeue", Helvetica, Arial, sans-serif;
 $serif:             "Georgia", Cambria, Times New Roman, Times, serif;
-$header-font:       "HelveticaNeue-Medium", Helvetica, Arial, sans-serif;
+$header-font:       "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
 $monospace-font:    "Consolas", "Menlo", monospace;
 
 $header-background:   #241510;
@@ -38,18 +38,17 @@ p {
   word-break: break-word;
   // cleaning up the ragged lines and breaks
   -webkit-hyphens: auto;
-     -moz-hyphens: auto;
-          hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
   // sets a minimum number of characters before and after the break
   -webkit-hyphenate-before: 2;
-   -webkit-hyphenate-after: 3;
-           hyphenate-lines: 3;
+  -webkit-hyphenate-after: 3;
+  hyphenate-lines: 3;
   // enabling fancy ligatures when available
   -webkit-font-feature-settings: "liga", "dlig";
-   -moz-font-feature-settings: "liga=1, dlig=1";
-      -ms-font-feature-settings: "liga", "dlig";
-       -o-font-feature-settings: "liga", "dlig";
-          font-feature-settings: "liga", "dlig";
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -o-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig";
 }
 
 h1, .h1, h2, .h2, h3, h4, h5 {
@@ -63,7 +62,7 @@ h1, .h1, h2, .h2, h3, h4, h5 {
 }
 
 h1, .h1, h2, .h2 {
-  letter-spacing:-2px;
+  letter-spacing:-1px;
 }
 
 h1, .h1 {
@@ -85,6 +84,7 @@ h4, .h4 {
 .branding {
   background-color: $header-background;
   .h1 a {
+    letter-spacing:-2px;
     text-transform:uppercase;
     color:$header-color;
   }
@@ -205,10 +205,12 @@ article {
   }
 
   footer a {
+    font-size:0.9em;
     border-radius: 3pt;
     color: $header-color !important;
-    font-variant: small-caps;
-    padding: 1px 2% 2px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    padding: 2px 2% 2px;
     background: $link-color;
     text-decoration: none;
     line-height:1.5;
@@ -218,7 +220,7 @@ article {
 
 nav, aside {
   ul {
-      padding:0;
+    padding:0;
     li {
       list-style: none;
       line-height:1.4;
@@ -228,32 +230,32 @@ nav, aside {
 }
 
 nav.pagination {
-	margin-top:20px;
-	margin-bottom:20px;
+  margin-top:20px;
+  margin-bottom:20px;
 
-	ul {
-		li {
-			a, span {
-				padding:10px;
-				float:left;
-				display:block;
-				color:$header-color;
-				margin-right:10px;
-				border-radius:5px;
-				text-decoration:none;
-				font-family:$header-font;
-				font-weight:bold;
-			}
+  ul {
+    li {
+      a, span {
+        padding:10px;
+        float:left;
+        display:block;
+        color:$header-color;
+        margin-right:10px;
+        border-radius:5px;
+        text-decoration:none;
+        font-family:$header-font;
+        font-weight:bold;
+      }
 
-			a {
-				background:$link-color;
-			}
+      a {
+        background:$link-color;
+      }
 
-			span {
-				background:$header-background;
-			}
-		}
-	}
+      span {
+        background:$header-background;
+      }
+    }
+  }
 }
 
 @media all and (max-width: 1024px) {
@@ -275,3 +277,8 @@ nav.pagination {
   }
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  h1, .h1, h2, .h2 {
+    letter-spacing:-2px;
+  }
+}
