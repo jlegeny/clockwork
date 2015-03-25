@@ -24,15 +24,15 @@
 
 </head>
 <body>
-<header class="branding" class="header" role="banner">
+<header class="branding" role="banner">
 	<p class="h1"><a href="/" rel="nofollow">Clockwork</a></p>
 </header>
 
 <div id="content">
-	<div id="main" class="" role="main">
+	<div id="main" role="main">
 		<%= yield %>
 	</div>
-	<aside id="sidebar" class="" role="complementary">
+	<aside id="sidebar" role="complementary">
 
 		<h4>Pages</h4>
 		<ul>
@@ -49,9 +49,7 @@
 
 </div>
 <footer class="branding" role="contentinfo">
-	<p class="copyright"><small>&copy; <%= Time.now.year %> Clockwork</small></p>
-	<p><small><em>Powered by <a href="http://middleman.app">Middleman</a>, <a href="http://themble.com/bones/">Bones</a>, <a href="http://www.bigfootjs.com/">Bigfoot</a> and <a href="http://jquery.com">jQuery</a></em></small></p>
-
+	<p><small>&copy; <%= Time.now.year %> Clockwork</small></p>
 </footer>
 
 
