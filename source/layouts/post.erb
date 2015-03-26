@@ -1,18 +1,18 @@
 <% wrap_layout :layout do %>
 	<article role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-	<header class="article-header"> 
+	<header>
 		<h1><%= link_to current_page.title, current_page %></h1>
 		<p><time datetime="<%= current_page.date.strftime('%Y-%m-%d') %>"><%= current_page.date.strftime('%Y-%m-%d') %></time></p>
 	</header>
 	<section>
 		<%= yield %>
 	</section>
-	<footer class="article-footer">
+	<footer>
 		<p class="tags">
 		<% current_page.tags.each do |tag| %>
 			<%= link_to tag, tag_path(tag) %>
-	<% end %>
+		<% end %>
 		</p>
 	</footer>
 
@@ -32,7 +32,5 @@ var disqus_shortname = 'clockworkfr'; // required: replace example with your for
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-
 
 <% end %>
