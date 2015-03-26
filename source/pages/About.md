@@ -2,18 +2,28 @@
 layout: page
 ---
 
-# Biography
+# About Me
+
+> My work explores the relationship between acquired synesthesia and multimedia
+> experiences.
+>
+> With influences as diverse as Camus and John Cage, new synergies are crafted
+> from both explicit and implicit textures.
+>
+> Ever since I was a student I have been fascinated by the ephemeral nature of
+> the mind. What starts out as vision soon becomes debased into a dialectic of
+> lust, leaving only a sense of decadence and the chance of a new synthesis.
+>
+> As temporal forms become clarified through emergent and diverse practice, the
+> viewer is left with a statement of the limits of our era.
+
+## Bio
 
 I am a software developer at [Mensia Technologies](http://mensiatech.com)
-working on software solutions for EEG signal processing.
+working on software solutions for EEG signal processing. Mostly, I specialize
+in C++ development.
 
-[My Bitbucket Profile](https://bitbucket.org/yoz-y)
-
-Formerly I have worked at Inria Rennes research laboratory as developer and
-later lead software engineer of the OpenViBE BCI platform. During my stay at
-Inria I have represented OpenViBE at occasions such as BCI Meeting 2013
-(California, USA) or Science Festival (Göteborg, Sweden). Previously I have
-worked for a subsidiary of Vinci company.
+## Research
 
 Some of my work involves doing science, so far I have two publications :
 
