@@ -5,6 +5,7 @@ $monospace-font:    "Consolas", "Menlo", monospace;
 
 $header-background:   #241510;
 $content-background:	#f8f1e8;
+$tag-background:      #d8d1c8;
 $header-color:        #fff;
 $link-color:          #784421;
 $text-color:          #333;
@@ -209,11 +210,14 @@ article {
     border-radius: 3pt;
     color: $header-color !important;
     text-transform:uppercase;
-    letter-spacing:2px;
+    letter-spacing:1px;
     padding: 2px 2% 2px;
-    background: $link-color;
+    background: $tag-background;
     text-decoration: none;
     line-height:1.5;
+    &:hover {
+      background: darken($tag-background, 20%);
+    }
   }
 }
 
