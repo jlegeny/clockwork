@@ -21,7 +21,7 @@ layout: page
 
 I am a software developer at [Mensia Technologies](http://mensiatech.com)
 working on software solutions for EEG signal processing. Mostly, I specialize
-in C++ development.
+in C++ development and web technologies. I dabble in interface design.
 
 ## Research
 
