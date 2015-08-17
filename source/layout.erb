@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
 <meta charset="utf-8" />
 <title>Clockwork<%= ' - ' + current_article.title unless current_article.nil? %></title>
@@ -21,6 +21,13 @@
 <script type="text/javascript" src="/js/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="/js/bigfoot.min.js"></script>
 <script type="text/javascript" src="/js/clockwork.js"></script>
+
+<% unless current_article.nil? %>
+<meta property="og:title" content="<%= current_article.title %>" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://yozy.net<%= current_page.url %>" />
+<meta property="og:image" content="http://yozy.net/css/images/apple-icon-touch.png" />
+<% end %>
 
 </head>
 <body>
