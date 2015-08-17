@@ -1,6 +1,6 @@
 $sans-serif:        "HelveticaNeue", Helvetica, Arial, sans-serif;
 $serif:             "Georgia", Cambria, Times New Roman, Times, serif;
-$header-font:       "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
+$header-font:       "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
 $monospace-font:    "Consolas", "Menlo", monospace;
 
 $header-background:   #241510;
@@ -54,7 +54,7 @@ p {
 
 h1, .h1, h2, .h2, h3, h4, h5 {
   font-family:$header-font;
-  font-weight:bold;
+  // font-weight:bold;
   line-height:1.4;
 
   a:link {
@@ -85,8 +85,8 @@ h4, .h4 {
 .branding {
   background-color: $header-background;
   .h1 a {
-    letter-spacing:-2px;
-    text-transform:uppercase;
+    letter-spacing:3px;
+    // text-transform:uppercase;
     color:$header-color;
   }
   p {
