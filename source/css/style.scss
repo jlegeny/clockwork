@@ -1,6 +1,7 @@
 $sans-serif:        "HelveticaNeue", Helvetica, Arial, sans-serif;
 $serif:             "Georgia", Cambria, Times New Roman, Times, serif;
-$header-font:       "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+$title-font:        "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+$header-font:       "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
 $monospace-font:    "Consolas", "Menlo", monospace;
 
 $header-background:   #241510;
@@ -13,9 +14,16 @@ $text-color:          #333;
 body {
   margin:0;
   padding:0;
+
   width:100%;
+  min-height:100vh;
+
   font-family:$sans-serif;
   background:$content-background;
+  display:-webkit-flex;
+  display:flex;
+  -webkit-flex-direction:column;
+  flex-direction:column;
 
   > header p > *, > footer p > *, #sidebar {
     padding-left:10px;
@@ -84,8 +92,9 @@ h4, .h4 {
 
 .branding {
   background-color: $header-background;
-  .h1 a {
+  p.h1 a {
     letter-spacing:3px;
+    font-family:$title-font;
     // text-transform:uppercase;
     color:$header-color;
   }
@@ -99,6 +108,8 @@ h4, .h4 {
 #content {
   display:-webkit-flex;
   display:flex;
+  flex:1;
+  -webkit-flex:1;
 
   -webkit-justify-content:space-between;
   justify-content:space-between;
