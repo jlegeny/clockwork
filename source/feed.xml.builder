@@ -1,7 +1,7 @@
 xml.instruct!
 xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
-  site_url = "http://clockwork.fr"
-  xml.title "Clockwork"
+  site_url = "http://yozy.net"
+  xml.title "yozy//NET"
   xml.subtitle "ideas about computer science, society and food"
   xml.id URI.join(site_url, blog.options.prefix.to_s)
   xml.link "href" => URI.join(site_url, blog.options.prefix.to_s)
