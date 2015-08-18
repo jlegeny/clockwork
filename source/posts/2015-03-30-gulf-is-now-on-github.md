@@ -3,7 +3,7 @@ layout: post
 title: Gulf is now on GitHub
 date: 2015-03-30 10:19:37 UTC
 category: 
-tags: Theme
+tags: theme
 ---
 
 In order to clean up all stuff I am moving the Gulf theme to a [GitHub
