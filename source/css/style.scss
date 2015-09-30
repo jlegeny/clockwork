@@ -177,6 +177,12 @@ article {
     }
   }
 
+  hr {
+    border:none;
+    border-bottom:1px dotted;
+    border-color:$text-color;
+  }
+
   p, code, pre {
     line-height:1.4;
   }
