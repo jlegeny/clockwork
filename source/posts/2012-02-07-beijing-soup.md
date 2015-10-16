@@ -14,19 +14,19 @@ I've been searching for this recipe for quite a long time. Finally I got hold of
 
 ## Ingredients
 
-	1. One whole chicken
-	2. Shiitake mushrooms (dried)
-	3. Black mushrooms (dried)
-	4. A carrot
-	5. Bamboo sprouts
-	6. Two eggs
-	7. Soy sauce
-	8. Rice vinegar
-	9. Sambala sauce
-	10. Tapioca starch
-	11. Salt
-	12. Whole black pepper
-	13. Chicken bouillon cube
+1. One whole chicken
+2. Shiitake mushrooms (dried)
+3. Black mushrooms (dried)
+4. A carrot
+5. Bamboo sprouts
+6. Two eggs
+7. Soy sauce
+8. Rice vinegar
+9. Sambala sauce
+10. Tapioca starch
+11. Salt
+12. Whole black pepper
+13. Chicken bouillon cube
 
 ## Preparation of ingredients
 
