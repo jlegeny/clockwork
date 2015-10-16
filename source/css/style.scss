@@ -194,7 +194,6 @@ article {
 
   code {
     font-family:$monospace-font;
-    background:darken($content-background, 15%);
     -webkit-hyphens:none;
     hyphens:none;
     word-break:break-all;
@@ -210,15 +209,19 @@ article {
   }
 
   pre {
+    background:darken($content-background, 15%);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
 
     code.hljs {
       display: block;
       border-radius: 5px;
       white-space: pre;
+      padding: 0.5em;
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
       overflow-scrolling: touch;
-      padding: 0.5em;
     }
   }
 
@@ -236,6 +239,12 @@ article {
       background: darken($tag-background, 20%);
     }
   }
+
+  ul, ol {
+    li {
+      line-height:1.4;
+    }
+  }
 }
 
 
@@ -245,7 +254,6 @@ nav, aside {
     li {
       list-style: none;
       line-height:1.4;
-
     }
   }
 }
