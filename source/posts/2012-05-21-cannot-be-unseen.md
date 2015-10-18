@@ -8,4 +8,13 @@ tags:
 - photos
 ---
 
-(PLACEHOLDER)
+On my trip to London I have stumbled upon a bridge with a curious design of the
+cable holding contraption.
+
+Once seen, this cannot be unseen. Well, at least it gives an interesting
+picture. Would be probably better in worse weather though.
+
+![cannot-be-unseen]
+
+[cannot-be-unseen]: /images/cannot-be-unseen.jpg "Cannot be unseen"
+
