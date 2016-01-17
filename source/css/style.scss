@@ -258,6 +258,20 @@ nav, aside {
   }
 }
 
+aside {
+  figure {
+    color: #333;
+    margin: 0;
+    img {
+      float: left;
+      margin-right: 10px;
+    }
+    caption {
+      font-variant:small-caps;
+    }
+  }
+}
+
 nav.pagination {
   margin-top:20px;
   margin-bottom:20px;
