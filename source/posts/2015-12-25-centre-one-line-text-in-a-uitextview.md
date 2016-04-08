@@ -29,15 +29,15 @@ I wanted to be able to centre the text in the view vertically. This should be ea
 Ouch, there is a semi-randomly placed offset at the top of the text. Turns out the point size of a font is not always the one you have demanded. However it is possible to get the actual height. An `UIFont` class provides a bunch of useful metrics:
 
     view.font = UIFont.boldSystemFontOfSize(100.0)
-		view.font.capHeight // 70.5
+    view.font.capHeight // 70.5
     view.font.pointSize // 100.0
-		view.font.ascender // 95.2
+    view.font.ascender // 95.2
     view.font.lineHeight // 119.3
 
     view.font = UIFont(name: "DINCondensed-Bold", size: 100.0)
-		view.font.capHeight // 71.2
+    view.font.capHeight // 71.2
     view.font.pointSize // 100.0
-		view.font.ascender // 71.2
+    view.font.ascender // 71.2
     view.font.lineHeight // 100.0
 
 On a graph this would look like this:
