@@ -11,6 +11,10 @@ $header-color:        #fff;
 $link-color:          #784421;
 $text-color:          #333;
 
+* {
+  min-width:0;
+}
+
 body {
   margin:0;
   padding:0;
