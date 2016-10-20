@@ -15,12 +15,10 @@
 <meta name="msapplication-TileColor" content="#f01d4f">
 <meta name="msapplication-TileImage" content="/css/images/win8-tile-icon.png">
 <link rel="stylesheet" href="/css/style.css">
-<link rel="stylesheet" href="/css/bigfoot-default.css">
+<link rel="stylesheet" href="/css/littlefoot.css">
 <link rel="stylesheet" href="/css/paraiso-dark.css">
 <script type="text/javascript" src="/js/highlight.pack.js"></script>
-<script type="text/javascript" src="/js/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="/js/bigfoot.min.js"></script>
-<script type="text/javascript" src="/js/clockwork.js"></script>
+<script type="text/javascript" src="/js/littlefoot.min.js"></script>
 
 <% unless current_article.nil? %>
 <meta property="og:title" content="<%= current_article.title %>" />
@@ -69,7 +67,9 @@
 
 <script type="text/javascript">
 hljs.initHighlightingOnLoad();
-$.bigfoot();
+window.littlefoot.default({
+  activateDelay: 0
+});
 </script>
 
 </body>
