@@ -3,9 +3,9 @@ pageable: true
 per_page: 10
 ---
 <% page_articles.each_with_index do |article, i| %>
-  <% if article.data.layout == 'post' %>
+  <% if article.options[:layout] == 'post' %>
     <%= partial "post", :locals => { :article => article} %>
-  <% elsif article.data.layout == 'micro' %>
+  <% elsif article.options[:layout] == 'micro' %>
     <%= partial "micro", :locals => { :article => article} %>
   <% end %>
 <% end %>
