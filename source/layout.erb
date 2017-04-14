@@ -14,9 +14,6 @@
     <!--[if IE]> <link rel="shortcut icon" href="/favicon.ico"> <![endif]-->
     <meta name="msapplication-TileColor" content="#f01d4f">
     <meta name="msapplication-TileImage" content="/css/images/win8-tile-icon.png">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/littlefoot.css">
-    <link rel="stylesheet" href="/css/paraiso-dark.css">
 
     <% unless current_article.nil? %>
     <meta property="og:title" content="<%= current_article.title %>" />
@@ -24,9 +21,11 @@
     <meta property="og:url" content="http://yozy.net<%= current_page.url %>" />
     <meta property="og:image" content="http://yozy.net/css/images/apple-icon-touch.png" />
     <% end %>
+    <link rel="stylesheet" href="/css/style.css">
 
   </head>
   <body>
+
     <header class="branding">
       <p class="h1"><a href="/" rel="nofollow">yozy//NET</a></p>
     </header>
@@ -58,6 +57,28 @@
     <footer class="branding">
       <p><small>&copy; 2007 – <%= Time.now.year %> Jozef Legény</small></p>
     </footer>
+
+    <noscript id="deferred-styles">
+      <link rel="stylesheet" href="/css/littlefoot.css">
+      <link rel="stylesheet" href="/css/paraiso-dark.css">
+    </noscript>
+
+    <script>
+      var loadDeferredStyles = () => {
+        var addStylesNode = document.getElementById('deferred-styles');
+        var replacement = document.createElement('div');
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement);
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      if (requestAnimationFrame) {
+        requestAnimationFrame(() => {
+          window.setTimeout(loadDeferredStyles, 0);
+        });
+      } else {
+        window.addEventListener('load', loadDeferredStyles);
+      }
+    </script>
 
     <script async type="text/javascript" src="/js/highlight.pack.js" onload="hljs.initHighlightingOnLoad()"></script>
     <script async type="text/javascript" src="/js/littlefoot.min.js" onload="window.littlefoot.default({activateDelay: 0})"></script>
