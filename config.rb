@@ -18,8 +18,9 @@ activate :blog do |blog|
   # blog.year_link = "{year}.html"
   # blog.month_link = "{year}/{month}.html"
   # blog.day_link = "{year}/{month}/{day}.html"
-  blog.default_extension = ".md"
-  blog.new_article_template = "source/templates/post.erb"
+  blog.default_extension = ".html.md"
+  blog.new_article_template = File.expand_path('source/templates/post.erb', File.dirname(__FILE__))
+
 
   blog.tag_template = "tag.html"
   blog.calendar_template = "calendar.html"
