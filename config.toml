@@ -1,0 +1,28 @@
+baseURL = "https://yozy.net/"
+languageCode = "en-us"
+title = "yozy//NET"
+theme = "clockwork"
+
+paginate = 10
+
+RSSURI = "feed.xml"
+
+pygmentscodefences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsUseClasses = true
+
+[permalinks]
+posts = "/:year/:month/:title/"
+pages = "/pages/:slug"
+
+[outputs]
+home = ["HTML","RSS"]
+
+[mediaTypes]
+[mediaTypes."application/rss"]
+suffix = "xml"
+
+[outputFormats]
+[outputFormats.RSS]
+mediatype = "application/rss"
+baseName = "feed"

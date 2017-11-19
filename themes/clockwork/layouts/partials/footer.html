@@ -1,0 +1,53 @@
+</main>
+
+<aside id="sidebar">
+  <h4>Pages</h4>
+  <ul>
+    <li><a href="/pages/about">About Me</a></li>
+    <li><a href="/pages/downloads">Downloads</a></li>
+  </ul>
+  <h4>Social</h4>
+  <a href="http://twitter.com/ytwoz"><img src="/css/images/twitter.svg" alt="twitter"/></a>
+  <a href="http://instagram.com/ytwoz"><img src="/css/images/instagram.svg" alt="instagram"/></a>
+  <a href="http://github.com/jlegeny"><img src="/css/images/github.svg" alt="github"/></a>
+  <h4>Sponsored</h4>
+  <a href="https://itunes.apple.com/us/app/eventail/id959674103?ls=1&mt=8&at=1010laN9">
+    <figure>
+      <img src="/css/images/eventail.svg" alt="Eventail"/>
+      <figcaption class="subtitle"><h5>Eventail</h5>The best calendar widget for the iPhone</figcaption>
+    </figure>
+  </a>
+</aside>
+</div>
+
+<footer class="branding">
+  <p><small>&copy; 2007 – {{ now.Format "2006" }} Jozef Legény</small></p>
+</footer>
+
+<noscript id="deferred-styles">
+  <link rel="stylesheet" href="/css/littlefoot.css">
+  <link rel="stylesheet" href="/css/syntax.css">
+</noscript>
+
+<script>
+var loadDeferredStyles = () => {
+  var addStylesNode = document.getElementById('deferred-styles');
+  var replacement = document.createElement('div');
+  replacement.innerHTML = addStylesNode.textContent;
+  document.body.appendChild(replacement);
+  addStylesNode.parentElement.removeChild(addStylesNode);
+};
+if (requestAnimationFrame) {
+  requestAnimationFrame(() => {
+    window.setTimeout(loadDeferredStyles, 0);
+  });
+} else {
+  window.addEventListener('load', loadDeferredStyles);
+}
+</script>
+
+
+<script async type="text/javascript" src="/js/littlefoot.min.js" onload="window.littlefoot.default({activateDelay: 0})"></script>
+
+</body>
+</html>

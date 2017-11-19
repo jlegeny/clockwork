@@ -1,6 +1,1 @@
-/build
-/.sass
-/.sass-cache
-/.cache
-/.DS_Store
-Gemfile.lock
+/public

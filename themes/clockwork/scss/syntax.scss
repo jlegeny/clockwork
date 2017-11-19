@@ -1,0 +1,170 @@
+$bg-default: #2f1e2e;
+
+$default: #a39e9b;
+$comment: #8d8587;
+$red: #ef6155;
+$orange: #f99b15;
+$yellow: #fec418;
+$green: #48b685;
+$aqua: #5bc4bf;
+$blue: #06b6ef;
+$purple: #815ba4;
+$unassigned: #ff0000;
+
+/* Error */ .chroma .err { 
+  color: #960050;
+  background-color: #1e0010 
+}
+/* LineTableTD */ .chroma .lntd { 
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+  border: 0; 
+}
+/* LineTable */ .chroma .lntable { ; border-spacing: 0; padding: 0; margin: 0; border: 0; width: 100%; overflow: auto; display: block; }
+/* LineHighlight */ .chroma .hl { background-color: #ffffcc; display: block; width: 100% }
+/* LineNumbersTable */ .chroma .lnt { ; margin-right: 0.4em; padding: 0 0.4em 0 0.4em; display: block; }
+/* LineNumbers */ .chroma .ln { ; margin-right: 0.4em; padding: 0 0.4em 0 0.4em; }
+
+.chroma {
+  color: $default;
+  background-color: $bg-default; 
+
+  .c, .ch, .cm, .c1, .cs, // comment
+  {
+    color: $comment;
+  }
+
+  .nx,
+  .na,
+  .nt,
+  .nd, .ne, 
+  .sr {
+    color: $red;
+  }
+
+  .m, .mb, .mf, .mi, .il, .mo, // number
+  .cp, .cpf, // preprocessor
+  .k, .kr, // keyword
+  .l, .ld, // literal
+  // parameter
+  .kc, .nc, .nb // constant
+  {
+    color: $orange;
+  }
+
+  .nc, // class
+  {
+    color: $yellow;
+  }
+
+  .s, .sa, .sb, .sc, .dl, .sd, .s2, .se, .sh, .si, .sx, .s1, .ss, // string
+  // value
+  // inheritance
+  // header
+  {
+    color: $green;
+  }
+
+  .mh, // hex
+  {
+    color: $aqua
+  }
+
+  .nf, // function
+  {
+    color: $blue;
+  }
+
+  .k, .kd, .kn, .kp, .kr, .kt, // keyword
+  {
+    color: $purple;
+  }
+
+  .o, .ow, // operator
+  {
+    color: $default;
+  }
+
+  .gd { color: #f92672 }
+  .ge { font-style: italic }
+  .gi { color: #a6e22e }
+  .gs { font-weight: bold }
+  .gu { color: #75715e }
+
+  .language- {
+    &xml {
+      .cp {
+        color: $default;
+      }
+      .na {
+        color: $orange;
+      }
+      .nt {
+        color: $red;
+      }
+    }
+
+    &swift {
+      .kd {
+        color: $green;
+      }
+    }
+  }
+
+}
+
+/* 
+Keyword .k
+KeywordConstant .kc
+KeywordDeclaration .kd
+KeywordNamespace .kn
+KeywordPseudo .kp
+KeywordReserved .kr
+KeywordType .kt
+NameAttribute .na
+NameClass .nc
+NameConstant .no
+NameDecorator .nd
+NameException .ne
+NameFunction .nf
+NameOther .nx
+NameTag .nt
+Literal .l
+LiteralDate .ld
+LiteralString .s
+LiteralStringAffix .sa
+LiteralStringBacktick .sb
+LiteralStringChar .sc
+LiteralStringDelimiter .dl
+LiteralStringDoc .sd
+LiteralStringDouble .s2
+eralStringEscape .se
+LiteralStringHeredoc .sh
+LiteralStringInterpol .si
+LiteralStringOther .sx
+LiteralStringRegex .sr
+LiteralStringSingle .s1
+LiteralStringSymbol .ss
+LiteralNumber .m
+LiteralNumberBin .mb
+LiteralNumberFloat .mf
+LiteralNumberHex .mh
+LiteralNumberInteger .mi
+LiteralNumberIntegerLong .il
+LiteralNumberOct .mo
+Operator .o
+OperatorWord .ow
+Comment .c
+CommentHashbang .ch
+CommentMultiline .cm
+CommentSingle .c1
+CommentSpecial .cs
+CommentPreproc .cp
+CommentPreprocFile .cpf
+GenericDeleted .gd
+GenericEmph .ge
+GenericInserted .gi
+GenericStrong .gs
+GenericSubheading .gu
+*/

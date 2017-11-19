@@ -1,0 +1,12 @@
+name = "Clockwork"
+license = "MIT"
+licenselink = "https://github.com/yihui/hugo-xmin/blob/master/LICENSE.md"
+description = "Theme used on yozy.net website"
+homepage = "https://yozy.net"
+tags = ["blog"]
+features = ["blog"]
+min_version = "0.18"
+
+[author]
+  name = "Jozef Legeny"
+  homepage = "https://yozy.net"

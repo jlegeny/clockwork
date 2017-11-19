@@ -1,0 +1,56 @@
+{{ partial "header.html" . }}
+
+{{if not .IsHome }}
+<h1>{{ .Title }}</h1>
+{{ end }}
+
+{{ .Content }}
+
+
+{{ $paginator := .Paginate (where .Data.Pages "Section" "in" (slice "micro"  "posts")) }}
+
+{{ range $paginator.Pages }}
+<article itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    <p><time datetime="{{ .Date.Format "2006-01-02"}}">{{ .Date.Format "2006-01-02" }}</time></p>
+  </header>
+
+  {{ .Content | markdownify}}
+
+  <footer>
+    <p class="tags">
+    {{ range .Params.tags }}
+    <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+    {{ end }}
+    </p>
+  </footer>
+</article>
+{{ end }}
+
+{{ $baseurl := .Site.BaseURL }}
+<nav class="pagination">
+  <ul>
+    {{ if .Paginator.HasPrev }}
+    <li><a href="{{ .Paginator.Prev.URL }}">&laquo; Prev</a></li>
+    {{ else }}
+    <li><span>&laquo; Prev</span></li>
+    {{ end }}
+ 
+    {{ range $paginator.Pagers }}
+    {{ if eq .PageNumber $paginator.PageNumber }}</li>
+    <li><span>{{ .PageNumber }}</span></li>
+    {{ else }}
+    <li><a href="{{ $baseurl }}{{ .URL }}">{{ .PageNumber }}</a></li>
+    {{ end }}
+    {{ end }}
+
+    {{ if .Paginator.HasNext }}
+    <li><a href="{{ .Paginator.Next.URL }}">Next &raquo;</a></li>
+    {{ else }}
+    <li><span>Next &raquo;</span></li>
+    {{ end }}
+  </ul>
+</nav>
+
+{{ partial "footer.html" . }}

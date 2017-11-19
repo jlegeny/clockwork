@@ -1,0 +1,19 @@
+{{ partial "header.html" . }}
+<article itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+    <p><time datetime="{{ .Date.Format "2006-01-02"}}">{{ .Date.Format "2006-01-02" }}</time></p>
+  </header>
+
+  {{ .Content }}
+
+  <footer>
+    <p class="tags">
+    {{ range .Params.tags }}
+    <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+    {{ end }}
+    </p>
+  </footer>
+</article>
+
+{{ partial "footer.html" . }}

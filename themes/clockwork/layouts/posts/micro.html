@@ -1,0 +1,9 @@
+{{ partial "header.html" . }}
+<article itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    <p><a href="{{ .Permalink }}"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time></a></p>
+  </header>
+
+  {{ .Content }}
+</article>
+{{ partial "footer.html" . }}
