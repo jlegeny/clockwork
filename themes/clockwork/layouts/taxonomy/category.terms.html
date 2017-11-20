@@ -1,0 +1,17 @@
+{{ partial "header.html" . }}
+
+<h1>Categories</h1>
+
+    <ul>
+        {{ range $key, $taxonomy := .Site.Taxonomies.categories }}
+        <li> {{ $key }} </li>
+        <ul>
+            {{ range $taxonomy.Pages }}
+            <li hugo-nav="{{ .RelPermalink}}"><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a></li>
+            {{ end }}
+        </ul>
+        {{ end }}
+    </ul>
+
+
+{{ partial "footer.html" . }}

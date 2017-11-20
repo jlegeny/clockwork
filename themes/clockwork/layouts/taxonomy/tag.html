@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+<h1>Pages tagged '{{ .Page.Title }}'</h1>
+<ul>
+  {{ range .Data.Pages }}
+     <li>
+       <a href="{{ .Permalink }}">{{ .Title }}</a>
+       {{ .Params.wikipedia }}
+     </li>
+  {{ end }}
+</ul>
+
+{{ partial "footer.html" . }}

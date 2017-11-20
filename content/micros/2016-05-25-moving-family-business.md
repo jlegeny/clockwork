@@ -1,5 +1,4 @@
 ---
-layout: micro
 title: Moving family business
 date: 2016-05-25T11:29:36Z
 category: Rant

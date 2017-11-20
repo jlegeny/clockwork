@@ -7,13 +7,19 @@
 {{ .Content }}
 
 
-{{ $paginator := .Paginate (where .Data.Pages "Section" "in" (slice "micro"  "posts")) }}
+{{ $paginator := .Paginate (where .Data.Pages "Section" "in" (slice "micros"  "posts")) }}
 
 {{ range $paginator.Pages }}
 <article itemscope itemtype="http://schema.org/BlogPosting">
   <header>
+    {{ if ne .Section "micros" }}
     <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-    <p><time datetime="{{ .Date.Format "2006-01-02"}}">{{ .Date.Format "2006-01-02" }}</time></p>
+    {{ end }}
+    <p>
+    {{ if eq .Section "micros" }}<a href="{{ .Permalink }}">{{ end }}
+    <time datetime="{{ .Date.Format "2006-01-02"}}">{{ .Date.Format "2006-01-02" }}</time>
+    {{ if eq .Section "micros" }}</a>{{ end }}
+    </p>
   </header>
 
   {{ .Content | markdownify}}
