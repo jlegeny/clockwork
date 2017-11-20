@@ -1,9 +1,5 @@
 ---
-layout: micro
-title: Apple store cheapskates
 date: 2014-11-17T18:49:15Z
-category:
-tags:
 ---
 
 I wonder if the people who complain about the Monument Valley in app purchase

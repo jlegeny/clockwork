@@ -3,6 +3,7 @@ layout: post
 title: Why is technet support so useless?
 date: 2017-09-04T09:23:20Z
 category: Rant
+draft: true
 tags:
  - Microsoft
 ---

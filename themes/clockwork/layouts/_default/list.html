@@ -13,7 +13,7 @@
 <article itemscope itemtype="http://schema.org/BlogPosting">
   <header>
     {{ if ne .Section "micros" }}
-    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
     {{ end }}
     <p>
     {{ if eq .Section "micros" }}<a href="{{ .Permalink }}">{{ end }}
@@ -22,7 +22,13 @@
     </p>
   </header>
 
-  {{ .Content | markdownify}}
+  {{ $c := .Content }}
+  {{ $c := $c | replaceRE "<h5(.*?)>(.*?)</h5>" "<h6$1>$2</h6>" }}
+  {{ $c := $c | replaceRE "<h4(.*?)>(.*?)</h4>" "<h5$1>$2</h5>" }}
+  {{ $c := $c | replaceRE "<h3(.*?)>(.*?)</h3>" "<h4$1>$2</h4>" }}
+  {{ $c := $c | replaceRE "<h2(.*?)>(.*?)</h2>" "<h3$1>$2</h3>" }}
+  {{ $c := $c | replaceRE "<h1(.*?)>(.*?)</h1>" "<h2$1>$2</h2>" }}
+  {{ $c | markdownify}}
 
   <footer>
     <p class="tags">
