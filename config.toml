@@ -17,13 +17,22 @@ micros = "/:filename/"
 pages = "/pages/:slug"
 
 [outputs]
-home = ["HTML","RSS"]
+home = ["html","rss", "jsonfeed"]
 
 [mediaTypes]
 [mediaTypes."application/rss"]
 suffix = "xml"
 
+[mediaTypes."application/json"]
+suffix = "json"
+
 [outputFormats]
-[outputFormats.RSS]
+
+[outputFormats.rss]
 mediatype = "application/rss"
 baseName = "feed"
+
+[outputFormats.jsonfeed]
+mediaType = "application/json"
+baseName = "feed"
+isPlainText = true
