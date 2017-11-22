@@ -21,7 +21,7 @@ Thus I made shortcuts for some of them as illustrated here:
 
 ![img-emoji-shortcuts]
 
-[img-emoji-shortcuts]: images/emoji-shortcuts.png "Emoji shortcut examples"
+[img-emoji-shortcuts]: /images/emoji-shortcuts.png "Emoji shortcut examples"
 
 They help me navigate in plain text document and provide valuable highlighting
 options in places where other methods do not exist. Maybe this could help you
