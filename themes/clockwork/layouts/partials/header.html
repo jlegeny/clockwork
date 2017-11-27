@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
     {{ if .IsHome }}
     <title>{{ .Site.Title }}</title>
     {{ else }}
@@ -14,6 +18,18 @@
     {{ end }}
     <link href="{{ with .OutputFormats.Get "jsonfeed"  }}{{ .Permalink }}{{ end }}" rel="alternate" type="application/json" title="{{ .Site.Title }}" />
     <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
+
+    <link rel="apple-touch-icon" href="/css/images/apple-icon-touch.png">
+    <link rel="icon" href="/favicon.png?v=2">
+    <!--[if IE]> <link rel="shortcut icon" href="/favicon.ico"> <![endif]-->
+    <meta name="msapplication-TileColor" content="#f01d4f">
+    <meta name="msapplication-TileImage" content="/css/images/win8-tile-icon.png">
+
+    <meta property="og:title" content="{{ .Title }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:image" content="{{ "/css/images/apple-icon-touch.png" | absURL }}" />
+
   </head>
 
   <body>
