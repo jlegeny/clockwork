@@ -1,6 +1,7 @@
 ---
 title: Use QtCreator to develop OpenViBE in 2017 on Linux
 date: 2017-11-19T20:00:00Z
+layout: post
 category: Knacks
 tags:
 - Qt Creator

@@ -1,5 +1,6 @@
 ---
 date: {{ .Date }}
+layout: micro
 ---
 
 

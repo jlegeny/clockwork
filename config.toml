@@ -13,7 +13,7 @@ pygmentsUseClasses = true
 
 [permalinks]
 posts = "/:year/:month/:title/"
-micros = "/:filename/"
+micros = "/micro/:filename/"
 pages = "/pages/:slug"
 
 [outputs]
