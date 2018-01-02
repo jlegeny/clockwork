@@ -240,6 +240,10 @@ article {
   }
 
   // Page specific hacks
+  img[src*='@2x'] {
+    width:50%;
+  }
+
   img[src$='#floatright'] {
     width: 300px;
     margin-left:20px;
