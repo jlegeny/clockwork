@@ -183,10 +183,13 @@ article {
     height:auto;
   }
 
+  p > code {
+    background:darken($content-background, 15%);
+  }
+
   code {
     font-family:$monospace-font;
     hyphens:none;
-    word-break:break-all;
   }
 
   blockquote {
@@ -241,7 +244,7 @@ article {
 
   // Page specific hacks
   img[src*='@2x'] {
-    width:50%;
+    zoom:50%;
   }
 
   img[src$='#floatright'] {
