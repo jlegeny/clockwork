@@ -181,6 +181,8 @@ article {
   img {
     max-width:100%;
     height:auto;
+    display:block;
+    margin: 0 auto;
   }
 
   p > code {
@@ -242,9 +244,24 @@ article {
     }
   }
 
+  figure {
+    margin: 0 auto;
+    text-align:center;
+
+    img {
+    }
+
+    figcaption {
+    }
+  }
+
   // Page specific hacks
   img[src*='@2x'] {
     zoom:50%;
+  }
+
+  img[src*='@3x'] {
+    zoom:33.333%;
   }
 
   img[src$='#floatright'] {
