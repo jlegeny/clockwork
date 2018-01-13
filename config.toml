@@ -9,7 +9,8 @@ RSSURI = "feed.xml"
 
 pygmentscodefences = true
 pygmentsCodefencesGuessSyntax = true
-pygmentsUseClasses = true
+pygmentsStyle = "monokai"
+#pygmentsUseClasses = true
 
 [permalinks]
 posts = "/:year/:month/:title/"

@@ -185,7 +185,7 @@ article {
     margin: 0 auto;
   }
 
-  p > code {
+  p > code, li > code {
     background:darken($content-background, 15%);
   }
 
