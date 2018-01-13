@@ -1,5 +1,5 @@
 ---
-title: "How I discovered how iOS calendar app chooses colors by digging into the icloud.com javascript code"
+title: "How I discovered how iOS calendar app chooses colors by digging into the icloud.com JavaScript code"
 date: 2018-01-13T19:50:00+01:00
 layout: post
 category: Eventail
@@ -22,17 +22,17 @@ I was hoping for some `displayBacgkroundColor` property on `EKCalendar` object o
 
 [colors-icloud]: /images/2018-01-13/apple-event-colors-icloud@2x.png
 
-iCloud.com being a modern we application, it runs a bunch of client side JavaScript. Since it is possible to add events, change calendar colors and so on, I assumed that the code which calculates the text and background colors for events must be somewhere in the publicly available javascript. There was a small possibility that they pre-computed the colors on the server but this seemed unlikely.
+iCloud.com being a modern web application, it runs a bunch of client side JavaScript. Since it is possible to add events, change calendar colors and so on, I assumed that the code which calculates the text and background colors for events must be somewhere in the publicly available JavaScript. There was a small possibility that they pre-computed the colors on the server but this seemed unlikely.
 
 # Homing in on the function
 
-I decided to use Safari for this. It seems kind of appropriate and I am quite familiar with its web developer tools. I open the iCloud website, open the calendar page and look into what kind of javascript files are loaded.
+I decided to use Safari for this. It seems kind of appropriate and I am quite familiar with its web developer tools. I open the iCloud website, open the calendar page and look into what kind of JavaScript files are loaded.
 
-Among others, this page loads mainly two big javascript files called `javascript-packed.js`. The other files are all called `javascript-strings` so I assume these load the localization files or something like that. 
+Among others, this page loads mainly two big JavaScript files, both called `javascript-packed.js`. The other files are all called `javascript-strings` so I assume these load the localization files or something like that. 
 
 My first hypothesis was that the function is called when a color of an already present event is changed. This might happen when, for example, the calendar to which the event belongs is changed.
 
-Luckily safari can display minified javascript files in indented mode. However searching for functions for strings like "update" give too many results. 
+Luckily Safari can display minified JavaScript files in indented mode. However searching for functions for strings like "update" gave me too many results. 
 
 Looking at the HTML code of an event, I can observe that its color is inside an inline style attribute and that it changes when I change the calendar. This is good news, as the inspector lets me to put a breakpoint on that.
 
@@ -90,7 +90,7 @@ Intuitively this line then, in the `_update` function, does what we were searchi
 p = t.get("textColor"), this.updateProperty(n, o, ".text", p, "color")
 ```
 
-I dig into this `textColor` property. I search the javascript file for it and looked over the few results I get.
+I dig into this `textColor` property. I search the JavaScript file for it and look over the few results I get.
 
 Within a piece of code which starts with `Cal.Collection = CoreCal.Collection.extend({` I find this (among the other event properties):
 
@@ -292,7 +292,7 @@ function computeBackgroundColor(rgb) {
 
 This was fun. Now, the colors on iCloud website are not strictly the same than in the iOS app, but that requires just a bit of tweaking with the constants.
 
-You can download the complete javascript file I have extracted here:
+You can download the complete JavaScript file I have extracted here:
 
 [Apple Calendar Colors](/files/downloads/2018/apple-calendar-colors.js)
 
