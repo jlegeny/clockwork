@@ -7,8 +7,8 @@ paginate = 10
 
 RSSURI = "feed.xml"
 
-pygmentscodefences = true
-pygmentsCodefencesGuessSyntax = true
+pygmentsCodeFences = true
+pygmentsCodeFencesGuessSyntax = true
 pygmentsStyle = "monokai"
 #pygmentsUseClasses = true
 
