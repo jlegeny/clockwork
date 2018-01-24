@@ -2,7 +2,7 @@
 layout: post
 title: Gulf is now on GitHub
 date: 2015-03-30T10:19:37Z
-category: 
+categories: Enhancements
 tags: 
  - theme
 ---

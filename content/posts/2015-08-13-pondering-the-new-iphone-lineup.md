@@ -2,7 +2,7 @@
 layout: post
 title: Pondering the new iPhone lineup
 date: 2015-08-13T07:12:52Z
-category: Feature
+categories: Feature
 tags:
  - iPhone
  - Apple

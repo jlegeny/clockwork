@@ -2,7 +2,7 @@
 layout: post
 title: Unprotect password protected Word documents
 date: 2016-10-22T13:13:43Z
-category: Knacks
+categories: Knacks
 tags:
 - word
 - cardboard security

@@ -2,7 +2,7 @@
 title: "10 Laws of UX, digested"
 date: 2018-01-19T15:43:59+01:00
 layout: post
-category: Freeboot
+categories: Freeboot
 tags:
   - UX
   - Design

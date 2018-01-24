@@ -2,7 +2,7 @@
 title: "Qt Creator Hidden Gems"
 date: 2018-01-02T11:57:28+01:00
 layout: post
-category: Knacks
+categories: Knacks
 tags:
   - QtCreator
 ---

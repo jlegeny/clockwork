@@ -2,7 +2,7 @@
 title: "Setting File Permissions on Windows With C"
 date: 2017-11-30T11:07:22+01:00
 layout: post
-category: Hacks
+categories: Hacks
 tags:
  - C++
  - Windows

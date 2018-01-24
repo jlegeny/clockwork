@@ -2,7 +2,7 @@
 title: Why there is no perfect email application
 date: 2017-05-03T08:47:03Z
 draft: true
-category: Rant
+categories: Rant
 tags:
 ---
 

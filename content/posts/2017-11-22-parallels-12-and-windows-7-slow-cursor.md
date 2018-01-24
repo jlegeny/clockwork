@@ -2,7 +2,7 @@
 title: "Parallels 12 and Windows 7 Slow Cursor"
 date: 2017-11-22T11:41:09+01:00
 layout: post
-category: Knacks
+categories: Knacks
 tags:
  - Parallels
  - Mouse

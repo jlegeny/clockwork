@@ -2,7 +2,7 @@
 title: "How I discovered how iOS calendar app chooses colors by digging into the icloud.com JavaScript code"
 date: 2018-01-13T19:50:00+01:00
 layout: post
-category: Eventail
+categories: Eventail
 tags:
   - iOS
   - Eventail

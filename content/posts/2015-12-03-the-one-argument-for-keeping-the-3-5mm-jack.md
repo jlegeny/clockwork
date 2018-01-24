@@ -2,7 +2,7 @@
 layout: post
 title: The one argument for keeping the 3.5mm jack
 date: 2015-12-03T13:20:36Z
-category: Rant
+categories: Rant
 tags:
  - iPhone
  - Apple

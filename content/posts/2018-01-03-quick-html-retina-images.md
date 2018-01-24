@@ -2,7 +2,7 @@
 title: "Pure CSS solution to retina images with a single file"
 date: 2018-01-03T10:20:50+01:00
 layout: post
-category: Hacks
+categories: Hacks
 tags:
   - HTML
   - CSS

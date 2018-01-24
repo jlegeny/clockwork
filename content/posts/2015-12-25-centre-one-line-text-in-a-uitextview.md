@@ -2,7 +2,7 @@
 layout: post
 title: Centre a one line text in a UITextView
 date: 2015-12-25T07:59:02Z
-category: Hacks
+categories: Hacks
 tags:
  - UIKit
  - iOS

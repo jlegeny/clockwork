@@ -2,7 +2,7 @@
 layout: post
 title: More gratuitous hate
 date: 2014-05-29T22:21:03Z
-category: Slice of Life
+categories: Slice of Life
 tags: 
  - Google
  - Hate
