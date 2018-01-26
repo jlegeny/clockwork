@@ -189,7 +189,7 @@ article {
     background:darken($content-background, 15%);
   }
 
-  code {
+  pre, code {
     font-family:$monospace-font;
     hyphens:none;
   }
