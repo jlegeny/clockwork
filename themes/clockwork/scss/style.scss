@@ -171,6 +171,7 @@ article {
   > p {
     a {
       text-decoration:underline !important;
+      -webkit-text-decoration-skip: edges;
     }
   }
 
