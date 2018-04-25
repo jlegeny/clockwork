@@ -1,5 +1,5 @@
 ---
-title: "Why Has Eventail So Many Settings?"
+title: "Why Does Eventail Have So Many Settings?"
 date: 2018-04-20T20:00:00+02:00
 layout: post
 categories: Eventail
