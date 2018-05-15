@@ -1,5 +1,7 @@
 ---
 title: Downloads
+slug: downloads
+layout: page
 ---
 
 This page lists most of the content available to download from my website.

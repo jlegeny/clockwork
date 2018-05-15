@@ -2,16 +2,14 @@
 
 <h1>Categories</h1>
 
-    <ul>
-        {{ range $key, $taxonomy := .Site.Taxonomies.categories }}
-        <li> {{ $key }} </li>
-        <ul>
-            {{ range $taxonomy.Pages }}
-            <li hugo-nav="{{ .RelPermalink}}"><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a></li>
-            {{ end }}
-        </ul>
-        {{ end }}
-    </ul>
-
+  {{ range .Data.Pages }}
+     <h2>{{ .Title }}</h2>
+     {{ $slug := .Title | urlize }}
+     <ul>
+     {{ range $pages := index .Site.Taxonomies.categories $slug }}
+     <li hugo-nav="{{ .RelPermalink}}"><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a><i><small>{{ .Date.Format "2006-01-02" }}</small></i></li>
+       {{ end }}
+     </ul>
+   {{ end }}
 
 {{ partial "footer.html" . }}
