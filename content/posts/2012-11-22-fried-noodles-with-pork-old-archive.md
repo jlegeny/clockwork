@@ -1,12 +1,10 @@
 ---
 layout: post
-title:  "Fried noodles with pork [Old Archive]"
+title:  "Fried noodles with pork"
 date:   2012-11-22 14:01:08
 categories: Culinary Recipes
 tags:
-- food
-- noodles
-- pork
+- Food
 ---
 
 More food from my production. Tested, eaten and tasty. This food does not

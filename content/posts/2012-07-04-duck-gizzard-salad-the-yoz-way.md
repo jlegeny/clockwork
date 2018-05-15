@@ -4,10 +4,7 @@ title:  "Duck gizzard salad, the Yoz-way"
 date:   2012-07-04 09:25:55
 categories: Culinary Recipes
 tags:
-- fat
-- food
-- health
-- salad
+- Food
 ---
 
 Since the last recipe was for a burger, let us make something healthier. Like a

@@ -5,7 +5,6 @@ date:   2013-04-26 01:09:56
 categories: Rant
 tags:
 - Facebook
-- like
 ---
 
 Have you ever thought you might be liking too much stuff on Facebook? Have you

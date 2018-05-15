@@ -1,14 +1,10 @@
 ---
 layout: post
-title:  "Smelly spread [Old Archive]"
+title:  "Smelly spread"
 date:   2012-11-20 00:06:06
 categories: Culinary Recipes
 tags:
-- fat
-- fish
-- food
-- onions
-- spread
+- Food
 ---
 
 Why smelly? Because your breath after eating this will be comparable to that of

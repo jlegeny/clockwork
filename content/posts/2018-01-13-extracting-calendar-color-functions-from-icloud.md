@@ -6,8 +6,8 @@ categories: Eventail
 tags:
   - iOS
   - Eventail
-  - Reverse Engineering
   - JavaScript
+  - Programming
 ---
 
 While making an iOS calendar app, I needed to find out how Apple calculates background and text colors when displaying events in the Calendar app. I wanted to use the same algorithm for my display, in order to integrate well with the OS.

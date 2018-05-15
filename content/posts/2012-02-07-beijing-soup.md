@@ -4,10 +4,7 @@ title:  "Beijing Soup"
 date:   2012-02-07 02:24:27
 categories: Culinary Recipes
 tags:
-- chicken
-- food
-- soup
-- spicy
+- Food
 ---
 
 I've been searching for this recipe for quite a long time. Finally I got hold of it thanks to my brother. And due to popular demand here is the recipe complete for one of the best soups out there. So... without further delays.

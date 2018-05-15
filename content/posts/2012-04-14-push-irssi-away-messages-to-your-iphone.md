@@ -6,8 +6,6 @@ categories: Knacks
 tags:
 - iOS
 - iPhone
-- irssi
-- push
 ---
 
 Using irssi for IRC is quite a must. Add some [bitlbee][lnk-bitlbee] sweetness

@@ -6,7 +6,6 @@ categories: Rant
 tags:
 - Apple
 - iOS
-- Notifications
 ---
 
 I try to keep my notifications minimal. Only those which are important should get through.

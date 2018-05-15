@@ -4,8 +4,7 @@ title:  "How to make Uncle Ben's chili sauce not suck"
 date:   2012-10-06 20:14:15
 categories: Culinary Recipes
 tags:
-- chili
-- food
+- Food
 ---
 
 ![1]

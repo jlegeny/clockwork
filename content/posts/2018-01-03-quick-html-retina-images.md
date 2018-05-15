@@ -6,7 +6,7 @@ categories: Hacks
 tags:
   - HTML
   - CSS
-  - Retina
+  - Programming
 ---
 
 Problem: You have an image and want it to display well in browsers on a high DPI display. There are many ways to do this, some of them [more complicated][1] than [others][2].

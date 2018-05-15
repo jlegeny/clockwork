@@ -6,7 +6,7 @@ categories: Hacks
 tags:
  - C++
  - Windows
- - WinAPI
+ - Programming
 ---
 
 *Edit 2018-01-19*

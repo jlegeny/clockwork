@@ -5,7 +5,7 @@ date:   2012-02-25 23:54:55
 categories: Knacks
 tags:
 - Dropbox
-- OS X
+- macOS
 ---
 
 This tutorial is largely based on [this post on the Dropbox

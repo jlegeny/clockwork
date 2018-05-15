@@ -4,8 +4,7 @@ title: Unprotect password protected Word documents
 date: 2016-10-22T13:13:43Z
 categories: Knacks
 tags:
-- word
-- cardboard security
+- Security
 ---
 
 It is always annoying when people expect you to collaborate with them and they send you locked files.

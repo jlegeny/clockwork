@@ -4,7 +4,7 @@ title: "Restore iA Writer's background with this script [Update]"
 date: 2013-10-10T00:42:44Z
 categories: Enhancements
 tags:
-- background
+- Theme
 - iA Writer
 ---
 This is a very quick and dirty utility to restore iA Writer’s background to the pre–1.3.1 state. What it does is that it replaces these three images inside the iA Writer folder: *backgroundPattern*, *tr-up-pattern* and *td-down-pattern*.

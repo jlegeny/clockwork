@@ -6,8 +6,6 @@ categories: Enhancements
 tags:
 - CSS
 - Firefox
-- Stylish
-- TV shows
 ---
 
 I got finally fed up with the Unity-like checkboxes on my favourite [TV-show

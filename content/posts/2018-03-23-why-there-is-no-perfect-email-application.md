@@ -3,7 +3,7 @@ title: Why there is no perfect email application
 date: 2018-03-23T10:00:00Z
 categories: Rant
 tags:
- - Email
+ - e-mail
 ---
 
 I have written this thought after listening to the [Golden Cortex

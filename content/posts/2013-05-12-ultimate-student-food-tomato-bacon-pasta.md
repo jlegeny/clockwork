@@ -4,11 +4,7 @@ title:  "Ultimate student food - Tomato Bacon Pasta"
 date:   2013-05-12 16:31:35
 categories: Culinary Recipes
 tags:
-- bacon
-- budget
-- pasta
-- student
-- tomato
+- Food
 ---
 
 This time I will share a recipe to what is probably the first thing I have

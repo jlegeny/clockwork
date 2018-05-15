@@ -5,7 +5,6 @@ date: 2017-10-31T15:10:51Z
 categories: Knacks
 tags:
  - Fish
- - DTerm
  - macOS
 ---
 

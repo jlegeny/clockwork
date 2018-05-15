@@ -7,7 +7,6 @@ tags:
   - Google
   - Apple
   - Messaging
-  - RCS
 ---
 
 Google has managed to herd device manufacturers and telcos to support a new standard for messaging: Rich Communication Services (RCS). In short it is "SMS, but good", with support for images and other rich media. After gChat, Hangouts, Google+, Meet, Allo or Duo, we can be skeptical on whether it will be adopted.

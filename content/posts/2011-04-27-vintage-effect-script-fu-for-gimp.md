@@ -5,6 +5,7 @@ date:   2011-04-27 08:00:02
 categories: Enhancements
 tags:
 - GIMP
+- Scripting
 - Scheme
 ---
 

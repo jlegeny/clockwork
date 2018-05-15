@@ -4,8 +4,7 @@ date: 2017-11-22T11:41:09+01:00
 layout: post
 categories: Knacks
 tags:
- - Parallels
- - Mouse
+ - Computer Problems
 ---
 
 After updating my macOS, Parallels 12 has broken loading a VM from the

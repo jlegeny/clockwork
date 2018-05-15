@@ -4,10 +4,8 @@ title:  "Best editor for Chinese text on Mac"
 date:   2012-06-24 16:15:27
 categories: Knacks
 tags:
-- chinese
-- OS X
-- text editor
-- writing
+- macOS
+- Writing
 ---
 
 I have spent some time (like an hour or so) looking for a good editor for

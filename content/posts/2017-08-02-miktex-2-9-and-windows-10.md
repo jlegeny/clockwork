@@ -2,9 +2,9 @@
 layout: post
 title: MiKTeX 2.9 and Windows 10 package installation woes
 date: 2017-08-02T15:42:08Z
-categories: Knack
+categories: Knacks
 tags:
-- MiKTeX
+- Computer Problems
 - Windows
 ---
 

@@ -5,7 +5,6 @@ date:   2013-08-23 19:10:02
 categories: Rant
 tags:
 - Amazon
-- ebook
 ---
 
 After the whole dung-storm about price fixing of ebooks at Apple I wanted to

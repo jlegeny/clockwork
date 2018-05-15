@@ -4,9 +4,10 @@ title:  "Gtk, Glade and signal handlers in C++"
 date:   2011-05-05 08:00:49
 categories: Hacks
 tags:
-- c++
+- C++
 - Glade
 - Gtk
+- Programming
 ---
 
 Much was written about connecting signal handlers to interfaces made with Glade

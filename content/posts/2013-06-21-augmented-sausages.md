@@ -4,10 +4,7 @@ title:  "Augmented sausages"
 date:   2013-06-21 23:05:34
 categories: Culinary Recipes
 tags:
-- bacon
-- cheese
-- fat
-- sausage
+- Food
 ---
 
 > My sausages are augmented

@@ -4,11 +4,8 @@ title:  "Enable system volume control for a generic USB device in Snow Leopard"
 date:   2011-06-06 08:00:56
 categories: Knacks
 tags:
-- audio
-- OS X
-- Snow Leopard
-- Soundflower
-- X-Fi USB
+- macOS
+- Computer Problems
 ---
 
 This post is mainly targeted at people who have used an X-Fi USB audio card

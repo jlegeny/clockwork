@@ -4,8 +4,6 @@ title:  "Publications"
 date:   2013-07-03 14:12:42
 categories: Slice of life
 tags:
-- biography
-- publications
 ---
 
 I have updated my [biography page][1]. I have added a link to my PRESENCE paper

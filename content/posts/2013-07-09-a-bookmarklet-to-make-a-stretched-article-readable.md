@@ -4,9 +4,7 @@ title:  "A bookmarklet to make a stretched article readable"
 date:   2013-07-09 11:21:33
 categories: Knacks
 tags:
-- bookmarklet
-- readability
-- web
+- Computer Problems
 ---
 
 There are many tools like [Readability][1] or [Evernote Clearly][2] to make any

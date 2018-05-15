@@ -5,7 +5,6 @@ date: 2014-05-29T22:21:03Z
 categories: Slice of Life
 tags: 
  - Google
- - Hate
 ---
 
 This has been in Rennes for some while now. One has to wonder what this

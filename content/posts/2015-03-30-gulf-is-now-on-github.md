@@ -4,7 +4,7 @@ title: Gulf is now on GitHub
 date: 2015-03-30T10:19:37Z
 categories: Enhancements
 tags: 
- - theme
+ - Theme
 ---
 
 In order to clean up all stuff I am moving the Gulf theme to a [GitHub

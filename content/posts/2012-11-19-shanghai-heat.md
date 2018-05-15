@@ -5,7 +5,6 @@ date:   2012-11-19 02:47:46
 categories: Culinary Recipes
 tags:
 - Food
-- Chicken
 ---
 
 More noodles! Why ?, you might ask, well because everyone loves noodles. And

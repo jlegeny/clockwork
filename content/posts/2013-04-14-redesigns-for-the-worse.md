@@ -5,7 +5,7 @@ date:   2013-04-14 23:03:55
 categories: Rant
 tags:
 - Apple
-- design
+- Design
 - iOS
 ---
 

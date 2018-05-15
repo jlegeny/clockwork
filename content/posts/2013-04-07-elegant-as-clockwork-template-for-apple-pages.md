@@ -4,8 +4,7 @@ title:  "Elegant as Clockwork template for Apple Pages"
 date:   2013-04-07 13:28:59
 categories: Enhancements
 tags:
-- Apple Pages
-- theme
+- Theme
 ---
 
 Pages is a quite nice word processor even though has several quite

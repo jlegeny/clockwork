@@ -4,9 +4,7 @@ title:  "Make Notes.app more beautiful"
 date:   2013-11-11 15:59:51
 categories: Hacks
 tags:
-- Mavericks
-- Notes.app
-- OS X
+- macOS
 ---
 
 

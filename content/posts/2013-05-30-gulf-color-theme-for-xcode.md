@@ -4,9 +4,9 @@ title:  "Gulf color theme for Xcode"
 date:   2013-05-30 14:37:42
 categories: Enhancements
 tags:
-- dark
-- theme
+- Theme
 - Xcode
+- Programming
 ---
 
 I have started teaching myself some Objective-C which also means that I have to

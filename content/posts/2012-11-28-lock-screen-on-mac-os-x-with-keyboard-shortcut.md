@@ -4,10 +4,8 @@ title:  "Lock screen on Mac OS X with keyboard shortcut [updated]"
 date:   2012-11-28 16:56:37
 categories: Knacks
 tags:
-- lock screen
-- Mac
-- OS X
-- security
+- macOS
+- Security
 ---
 
 *Last update: 2017-11-18 for High Sierra*

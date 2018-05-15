@@ -4,8 +4,8 @@ title:  "Global keyboard actions in Snow Leopard without third-party software"
 date:   2011-05-04 08:00:15
 categories: Knacks
 tags:
-- OS X
-- Snow Leopard
+- macOS
+- Computer Problems
 ---
 
 When I first got to use Mac OS X I have wondered whether it is possible to do

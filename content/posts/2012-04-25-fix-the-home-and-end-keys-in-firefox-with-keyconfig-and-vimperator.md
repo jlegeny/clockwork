@@ -5,9 +5,8 @@ date:   2012-04-25 11:12:58
 categories: Knacks
 tags:
 - Firefox
-- keyboard
-- Mac
-- OS X
+- macOS
+- Computer Problems
 ---
 
 Somme funny man thought that it would be good to screw up the behavior of home
