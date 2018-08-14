@@ -4,7 +4,7 @@ date: 2018-01-02T11:57:28+01:00
 layout: post
 categories: Knacks
 tags:
-  - QtCreator
+  - Qt Creator
 ---
 
 When it comes to C++ IDEs I always reach for Qt Creator. I love its streamlined user interface which nevertheless exposes all screws and knobs if necessary.
