@@ -3,6 +3,7 @@ $serif:             "Georgia", Cambria, Times New Roman, Times, serif;
 $title-font:        "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
 $header-font:       "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
 $monospace-font:    "Consolas", "Menlo", monospace;
+$kbd-font:          "Meslo", monospace;
 
 $header-background:   #241510;
 $content-background:	#f8f1e8;
@@ -200,6 +201,15 @@ article {
   pre, code {
     font-family:$monospace-font;
     hyphens:none;
+  }
+
+  kbd {
+    font-family:$kbd-font;
+    border-radius:3px;
+    border: 1px solid black;
+    background-color:#ddd;
+    padding:2px 2px 2px;
+    font-size: 0.9em;
   }
 
   blockquote {
