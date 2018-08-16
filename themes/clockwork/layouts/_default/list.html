@@ -17,26 +17,14 @@
     {{ end }}
     <p>
     {{ if eq .Section "micros" }}<a href="{{ .Permalink }}">{{ end }}
-    <time datetime="{{ .Date.Format "2006-01-02"}}">{{ .Date.Format "2006-01-02" }}</time>
+    {{ partial "post/meta.html" . }}
     {{ if eq .Section "micros" }}</a>{{ end }}
     </p>
   </header>
 
-  {{ $c := .Content }}
-  {{ $c := $c | replaceRE "<h5(.*?)>(.*?)</h5>" "<h6$1>$2</h6>" }}
-  {{ $c := $c | replaceRE "<h4(.*?)>(.*?)</h4>" "<h5$1>$2</h5>" }}
-  {{ $c := $c | replaceRE "<h3(.*?)>(.*?)</h3>" "<h4$1>$2</h4>" }}
-  {{ $c := $c | replaceRE "<h2(.*?)>(.*?)</h2>" "<h3$1>$2</h3>" }}
-  {{ $c := $c | replaceRE "<h1(.*?)>(.*?)</h1>" "<h2$1>$2</h2>" }}
-  {{ $c | markdownify}}
+  {{ partial "post/content.html" . }}
+  {{ partial "post/tags.html" . }}
 
-  <footer>
-    <p class="tags">
-    {{ range .Params.tags }}
-    <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-    {{ end }}
-    </p>
-  </footer>
 </article>
 {{ end }}
 

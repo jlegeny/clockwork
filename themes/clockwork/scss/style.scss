@@ -158,8 +158,9 @@ a, a:hover, a:visited, a:link {
 
 article {
   header {
-    time {
+    time, span {
       font-size:0.8em;
+      font-family: $monospace-font;
     }
   }
 
