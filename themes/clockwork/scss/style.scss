@@ -10,6 +10,7 @@ $content-background:	#f8f1e8;
 $tag-background:      #d0c1b9;
 $header-color:        #fff;
 $link-color:          #784421;
+$link-color-visited:  #609;
 $text-color:          #333;
 
 * {
@@ -170,10 +171,13 @@ article {
     border-color:$text-color;
   }
 
-  > p {
+  > p, li {
     a {
       text-decoration:underline !important;
       -webkit-text-decoration-skip: edges;
+    }
+    a:visited {
+      color: $link-color-visited;
     }
   }
 
