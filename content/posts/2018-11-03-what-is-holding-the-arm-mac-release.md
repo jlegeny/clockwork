@@ -9,9 +9,9 @@ tags:
 - Mac
 ---
 
-The event held on the 30th of October solidified the idea roaming the Internet since a few years: ARM Macs are coming, and they are coming _soon_. [A-series chips have caught up to all but the best Intel mobile chips][geekbench], so why is there an Intel processor inside the new _MacBook Air_?
+The event held on the 30th of October solidified the idea roaming the Internet since a few years: ARM Macs are coming, and they are coming _soon_. A-series chips have caught up to all but the best Intel mobile chips[^geekbench], so why is there an Intel processor inside the new _MacBook Air_?
 
-[geekbench]: https://browser.geekbench.com/v4/cpu/compare/10611310?baseline=10581888 "A12X vs 6-core Intel Core i7-8850H"
+[^geekbench]: An [A12X chip is neck-to-neck with a 6-core Intel Core i7-8850H](https://browser.geekbench.com/v4/cpu/compare/10611310?baseline=10581888); it only falls behind an i9
 
 I have a theory: A-series chips are not powerful enough–but in an unapparent way. 
 
