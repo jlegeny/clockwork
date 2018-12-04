@@ -2,7 +2,6 @@
 title: "Let's Play Alcatraz"
 date: 2018-12-04T14:56:41+01:00
 layout: post
-draft: true
 categories: Video
 tags:
   - Gaming
