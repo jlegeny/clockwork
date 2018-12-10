@@ -5,7 +5,6 @@ date:   2012-11-08 03:13:01
 categories: Knacks
 tags:
 - macOS
-- Writing
 ---
 
 I have finally managed to find a use for the ± key on the Apple keyboard. This keyI have finally managed to find a use for the ± key on the Apple keyboard. This key bugged me since I got the computer as I have never ever seen it in a text and just can not understand why it would be on a keyboard in the first place.

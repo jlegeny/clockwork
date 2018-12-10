@@ -4,7 +4,7 @@ title: DTerm and Fish shell, together
 date: 2017-10-31T15:10:51Z
 categories: Knacks
 tags:
- - Fish
+ - Shell
  - macOS
 ---
 

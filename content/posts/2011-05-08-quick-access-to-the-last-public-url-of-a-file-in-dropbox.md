@@ -4,14 +4,14 @@ title:  "Quick access to the last public url of a file in Dropbox"
 date:   2011-05-08 08:00:14
 categories: Knacks
 tags:
-- bash
+- Shell
 - Dropbox
 - Linux
 ---
 
 I got bored to search for the url after uploading a file to the Dropbox's
 public folder. So I have hacked a quick shell script that takes the public url
-of the lastest file you uploaded to your public Dropbox folder and copies it to
+of the latest file you uploaded to your public Dropbox folder and copies it to
 the clipboard. I thought I could share:
 
 ```bash

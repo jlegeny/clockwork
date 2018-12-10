@@ -5,7 +5,6 @@ date:   2011-06-06 08:00:56
 categories: Knacks
 tags:
 - macOS
-- Computer Problems
 ---
 
 This post is mainly targeted at people who have used an X-Fi USB audio card
