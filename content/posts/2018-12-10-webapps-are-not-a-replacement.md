@@ -12,7 +12,7 @@ Increasing amount of tools are written for web, many presenting themselves as re
 
 For simple stuff this is fine, few people would like to install an application for every shop or transport provider.
 
-Complex programs running in tabs hit an insurmountable hurdle: "they cannot get implement keyboard shortcuts". And it is a problem that nobody has figured out yet, it is a fundamental issue that will never be fixed.
+Complex programs running in tabs hit an insurmountable hurdle: "they cannot implement correct keyboard shortcuts". And it is a problem that nobody has figured out yet, it is a fundamental issue that will never be fixed.
 
 Some examples that come to mind:
 
