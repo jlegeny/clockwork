@@ -18,14 +18,14 @@ micros = "/micro/:filename/"
 pages = "/pages/:slug"
 
 [outputs]
-home = ["html","rss", "jsonfeed"]
+home = ["html", "rss", "jsonfeed"]
 
 [mediaTypes]
 [mediaTypes."application/rss"]
-suffix = "xml"
+suffixes = ["xml"]
 
 [mediaTypes."application/json"]
-suffix = "json"
+suffixes = ["json"]
 
 [outputFormats]
 
@@ -37,3 +37,7 @@ baseName = "feed"
 mediaType = "application/json"
 baseName = "feed"
 isPlainText = true
+
+[privacy.youtube]
+disable = false
+privacyEnhanced = true

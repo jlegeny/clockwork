@@ -1,6 +1,7 @@
 ---
 title: Why there is no perfect email application
 date: 2018-03-23T10:00:00Z
+layout: post
 categories: Rant
 tags:
  - e-mail
