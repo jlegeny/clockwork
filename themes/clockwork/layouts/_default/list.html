@@ -15,11 +15,9 @@
     {{ if ne .Section "micros" }}
     <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
     {{ end }}
-    <p>
     {{ if eq .Section "micros" }}<a href="{{ .Permalink }}">{{ end }}
     {{ partial "post/meta.html" . }}
     {{ if eq .Section "micros" }}</a>{{ end }}
-    </p>
   </header>
 
   {{ partial "post/content.html" . }}
