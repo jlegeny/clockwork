@@ -31,7 +31,19 @@
   <p><small>&copy; 2007 – {{ now.Format "2006" }} Jozef Legény</small> </p>
 </footer>
 
-<script async src="/js/littlefoot.min.js" onload="window.littlefoot.default({activateDelay: 0})"></script>
+  <script>
+    function initFootnotes() {
+      window.littlefoot.default({
+        activateDelay: 0,
+        numberResetSelector: 'article',
+        buttonTemplate: '<div class="littlefoot-footnote__container">\
+        <button class="littlefoot-footnote__button littlefoot-footnote__button__number" id="<%= reference %>" data-footnote-id="<%= id %>" data-footnote-number="<%= number %>" title="See Footnote <%= number %>" rel="footnote" data-littlefoot-footnote="<%= content %>">\
+        </button>\
+        </div>'
+      });
+    }
+  </script>
+<script async src="/js/littlefoot.min.js" onload="initFootnotes()"></script>
 
 </body>
 </html>
