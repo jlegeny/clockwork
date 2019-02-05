@@ -299,6 +299,19 @@ article {
     border-radius:5px;
     background:#f0d090;
   }
+  .footnote-return {
+    display: inline-block;
+    text-decoration: none !important;
+    transform: scale(1, -1);
+    position:relative;
+    top: -0.2ex;
+    sup {
+      display: none;
+    }
+    &::after {
+      content: "↩︎";
+    }
+  }
 }
 
 
