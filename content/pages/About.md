@@ -4,11 +4,9 @@ slug: about
 layout: page
 ---
 
-I am a software developer at [Mensia Technologies](http://mensiatech.com)
-working on software solutions for EEG signal processing. Mostly, I specialize
-in C++ development and web technologies. I dabble in interface design.
+I specialize in C++ and I dabble in mobile development and interface design.
 
-I develop [Eventail](https://eventail.app), a compact calendar widget for iOS.
+I made [Eventail](https://eventail.app), a compact calendar widget for iOS.
 
 ## Research
 
