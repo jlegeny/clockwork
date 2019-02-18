@@ -327,6 +327,7 @@ nav, aside {
 
 aside {
   figure {
+    display: block;
     color: #333;
     margin: 0;
     img {
@@ -390,9 +391,14 @@ nav.pagination {
       width:auto;
     }
   }
-  #sidebar img {
-    width:64px;
-    height:64px;
+  #sidebar {
+    img {
+      width:64px;
+      height:64px;
+    }
+    h4:first-child {
+      margin-top:150px !important;
+    }
   }
 }
 
