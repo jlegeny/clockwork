@@ -78,7 +78,8 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size:1.5em;
+  font-size:1.25em;
+  color:#333;
 }
 
 h4, .h4 {
@@ -298,6 +299,13 @@ article {
     border: 1px solid #605010;
     border-radius:5px;
     background:#f0d090;
+  }
+  .footnotes {
+    li {
+      font-size: 0.9em;
+      margin-bottom:5px;
+      color:#333;
+    }
   }
   .footnote-return {
     display: inline-block;
