@@ -1,5 +1,5 @@
 ---
-title: "Dos Game Club Podcast Episode 22: The Secret of Monkey Island"
+title: "DOS Game Club Podcast Episode 22: The Secret of Monkey Island"
 date: 2018-10-25T21:38:01+02:00
 layout: post
 categories: Slice of Life
@@ -9,7 +9,7 @@ tags:
 ---
 
 A new episode of [Dos Game Club podcast][dgc-22] was released today. This
-22<sup>nd</sup> installment is about a legendary game: The Secret of Monkey
+22<sup>nd</sup> instalment is about a legendary game: The Secret of Monkey
 Island.
 
 I have been fortunate to be able to join Martijn, Florian, Mike, Philipp and
