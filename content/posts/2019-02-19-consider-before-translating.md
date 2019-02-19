@@ -6,7 +6,7 @@ categories: Eventail
 tags:
 ---
 
-Your application is finished and uploaded it to the App Store. You are happy and eager to see the reactions from customers. Then, a review like this lands in:
+Your application is finished and uploaded to the App Store. You are happy and eager to see the reactions from customers. Then, a review like this lands in:
 
 <div style="max-width:8cm;background:#f5f5f5;text-color:#222;border-radius:10px;padding:15px;box-shadow:2px 2px 20px #444">
 <p><strong>Spanish,please</strong> <span style="color:#fa1">★★★☆☆</span><br/>
