@@ -7,7 +7,7 @@ tags:
  - Apple
 ---
 
-This years Apple WWDC keynote will be allegedly focused on “Marzipan” and new iPad functionalities of iOS 13. Here are a few predictions that do not concern any of these.
+This year's Apple WWDC keynote will be allegedly focused on “Marzipan” and new iPad functionalities of iOS 13. Here are a few predictions that do not concern any of these.
 
 1. Apple will tease the new Mac Pro and it will contain at least one user accessible ARM CPU. This will be usable for tasks like machine learning and iOS development.
 2. Apple will not introduce a new MacBook Pro format. Otherwise they would Osbourne the latest crop of 15” MBPs.
