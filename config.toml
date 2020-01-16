@@ -5,8 +5,6 @@ theme = "clockwork"
 
 paginate = 10
 
-RSSURI = "feed.xml"
-
 pygmentsCodeFences = true
 pygmentsCodeFencesGuessSyntax = true
 pygmentsStyle = "monokai"
