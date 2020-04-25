@@ -22,7 +22,7 @@ With Eventail, I have broken this rule in two ways: On top of having many option
 
 ![eventail-settings]
 
-[eventail-settings]: /images/2018-04-20/eventail-settings@3x.png#floatright
+[eventail-settings]: /images/2018-04-20/eventail-settings@3x.png#+right+half
 
 The ultimate goal of Eventail is to be a perfect calendar widget for the masses. As I have argued in my [article about e-mail clients][cwk-email]: everybody's definition of perfect is different. As such, I have defined two ground rules about the widget which will stay unbroken.
 

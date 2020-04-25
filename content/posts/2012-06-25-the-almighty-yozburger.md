@@ -40,7 +40,7 @@ over it to make candied bacon.
 
 ![yozburger]
 
-[yozburger]: /images/yozburger/yozburger.png#floatright
+[yozburger]: /images/yozburger/yozburger.png#+right+w300
 
 Remove the bacon, salt and pepper the burger and put it on the pan (use the
 same pan for everything). When the steak is almost done (rare) put the onions

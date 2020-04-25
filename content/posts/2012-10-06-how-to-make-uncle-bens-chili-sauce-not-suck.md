@@ -21,4 +21,4 @@ of Uncle Ben's chili sauce, add in a can of tomato paste and an appropriate
 amount of Sriracha sauce. And, voilà, ready to cook and serve. Preferably with
 bacon and rice.
 
- [1]: /images/Chiliupgrade.jpg#floatright "Uncle Ben's chili upgraded"
+ [1]: /images/Chiliupgrade.jpg#+right+w300 "Uncle Ben's chili upgraded"

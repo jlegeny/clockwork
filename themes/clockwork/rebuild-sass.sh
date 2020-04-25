@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sass -t compressed --sourcemap=none --watch scss:static/css
+node ./node_modules/sass/sass.js --style compressed --no-source-map --watch scss:static/css
