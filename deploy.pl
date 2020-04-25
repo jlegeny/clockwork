@@ -3,8 +3,6 @@
 my $system = `uname -s -m`;
 chomp $system;
 
-print(">$system<");
-
 my $program;
 if ($system eq "Darwin x86_64") {
   $program = "./bin/hugo_macos";

@@ -3,8 +3,6 @@
 my $system = `uname -s -m`;
 chomp $system;
 
-print(">$system<");
-
 my $program;
 if ($system eq "Darwin x86_64") {
   $program = "./bin/hugo_macos";
@@ -18,5 +16,5 @@ if ($system eq "Darwin x86_64") {
     
 die "Environment not set" unless $ENV{CLOCKWORKSSH};
 
-system("$program server -D --disableFastRender");
+system("$program server --buildDrafts --buildFuture --disableFastRender");
 
