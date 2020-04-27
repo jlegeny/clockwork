@@ -2,7 +2,7 @@
 title: "CSS Classes in Pure Markdown"
 date: 2020-04-27T08:00:00+02:00
 layout: post
-categories:
+categories: Hacks
 tags:
 - CSS
 ---
