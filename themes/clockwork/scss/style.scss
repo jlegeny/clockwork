@@ -71,6 +71,7 @@ h1, .h1, h2, .h2 {
 
 h1, .h1 {
   font-size: 2.2em;
+  clear: both;
 }
 
 h2, .h2 {
@@ -227,8 +228,9 @@ article {
     }
   }
 
-  hr {
+  c-clear {
     clear: both;
+    display: block;
   }
 
   pre {
@@ -291,20 +293,24 @@ article {
     zoom: 33.333%;
   }
 
-  img[src*='+half'] {
+  img[src*='+twoth'], figure.twoth {
+    width: 66.6%;
+  }
+
+  img[src*='+half'], figure.half {
     width: 50%;
   }
 
-  img[src*='+third'] {
+  img[src*='+third'], figure.third {
     width: 33.33%;
   }
 
-  img[src*='+left'] {
+  img[src*='+left'], figure.left {
     margin-right: 20px;
     float: left;
   }
 
-  img[src*='+right'] {
+  img[src*='+right'], figure.right {
     margin-left: 20px;
     float: right;
   }
