@@ -48,6 +48,15 @@ I like how Shodan gets progressively madder at each step you make. This is somet
 
 {{< figure src="/images/system-shock/ss-shodan-mad.jpg" title="I don't think it's me who has no hope." >}}
 
+
+![ss-notes]
+
+System Shock has left me with more than just good feelings. I have also kept something physical: my notes I took during the playthrough, to keep track of codes and objectives. At some point the player has to find a malfunctioning relay. I have missed the data log specifying its identification number so I had to scour the engineering level and find all of the relays, then enter them into the diagnostics tool and find which one was broken. Paper and map notes were wery handy in this instance.
+
+Since I have not kept track of the numbers given by the destroyed comptuers, I had to take a scenic route just before the ending and re-visit all of the previous locations and find all of the places where the computers were.
+
+<c-clear/>
+
 {{< figure src="/images/system-shock/ss-last-battle.jpg" title="I went into the last room doped on every possible substance." class="right third">}}
 
 Due to my play style I have ended up with a ton of grenades, ammunition and healing drugs to last me for the final combat twenty times over. I wonder if it would be possible to design a game in a way to force me to not squirrel objects that much. At the same time, the laser rapier is a mighty good weapon once you have found the closest power station. The end fight was relatively easy and final cyberspace section ended surprisingly quickly.
@@ -57,5 +66,6 @@ Due to my play style I have ended up with a ton of grenades, ammunition and heal
 See you on the Von Braun!
 
 [ss-end-screen]: /images/system-shock/ss-end-screen.jpg
+[ss-notes]: /images/system-shock/ss-notes.jpg#+third+right
 
 
