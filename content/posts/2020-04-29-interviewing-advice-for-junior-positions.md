@@ -1,5 +1,5 @@
 ---
-title: "Interviewing Advice for Junior Positions"
+title: "How to get into a junior position and keep it"
 date: 2020-04-29T08:00:00+02:00
 layout: post
 categories: Knacks
@@ -21,15 +21,13 @@ Now here is the principal thing:
 
 Reading a three page resume is a chore but can be done in a couple of minutes. A candidate in the room, however, deserves attention for at least half an hour. The job of the interviewer is to learn about the candidate and find out if they will fit the company and be productive. With nothing but the resume to grasp on, the conversation naturally gravitates towards the mentioned projects. So if I ask you what was your role during a particular project, what were the challenges, or what did you like or dislike when using a particular tech, you'd better have an answer ready.
 
-Second advice will be a truism but please **don't be an ass**.
-
 # Understand things before tearing them apart
 
 There is a large chance you will be recruited as a part of a team. You may have read a lot about 10x developers but don't pay too much attention to that. Most software is not written by superstars[^fn-advice].
 
 [^fn-advice]: Also they probably don't read recruiting advice on random blogs.
 
-Personality is something that will be evaluated during the probation period. I will not give social skills advice, but I can a good personality test for coders is to observe how they approach the existing code base. Usually the first (and second... probably the third too) impression is that the code _sucks_. This is for two reasons: First is because it was written by people. Second is for you to discover. And I mean this quite literally.
+Personality is something that will be evaluated during the probation period. A good personality indicator for coders is the manner  how they approach an existing code base. Usually the first (and second... probably the third too) impression is that the code _sucks_. This is for two reasons: First is because it was written by people. Second is for you to discover. And I mean this quite literally.
 
 Before spewing expletives ask your colleagues to explain why the code works the way it does, why is it structured as it is and so on. Chances are there are reasons that may not make sense now but may have when the code was written.
 
@@ -37,11 +35,11 @@ Some examples:
 
 -  The code was written before a feature X in language even existed. Rewriting it is not a priority.
 -  The code originally depended on library X but it was refactored out.
--  Implementing feature X was required to secure funding 10 years ago, it was never used since and there was no time to remove it[^fn-funding] 
+-  Implementing feature X was required to secure funding 10 years ago, it was never used since and there was no time to remove it.[^fn-funding] 
 
 [^fn-funding]: My personal favorite.
 
-The first reflex is the urge to rewrite everything. For that I invite you to read this [article by Joel Spolsky][never-rewrite].
+The first reflex is the urge to rewrite everything. I invite you to read this [article by Joel Spolsky][never-rewrite] to find out why this is a really bad idea.
 
 Only once you have understood the reasons, you can start fuming and lamenting what a pile of garbage you have inherited. But this will keep you from making mistakes that could lead to disaster and lost time down the road. Example: Refactoring a library that ends up breaking some client's plugin they depend on. It will also avoid being the obnoxious winger during lunch.
 
