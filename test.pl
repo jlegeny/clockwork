@@ -14,7 +14,5 @@ if ($system eq "Darwin x86_64") {
   die("Unknown system detected");
 }
     
-die "Environment not set" unless $ENV{CLOCKWORKSSH};
-
 system("$program server --buildDrafts --buildFuture --disableFastRender");
 
