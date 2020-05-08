@@ -2,7 +2,6 @@
 title: "Tricking Programmers Into Being Helpful"
 date: 2020-05-08T17:30:00+02:00
 layout: post
-draft: true
 categories: Knacks
 tags:
  - Programming
