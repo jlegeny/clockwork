@@ -5,6 +5,7 @@ layout: post
 draft: true
 categories: Knacks
 tags:
+ - Programming
 ---
 
 People[\[1\]][so-unwelcoming] accuse Stack Overflow of being unwelcoming to newbies. Older programmers complain that the site quality has decreased because of the influx of low quality questions.
