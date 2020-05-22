@@ -66,6 +66,6 @@ Due to my play style I have ended up with a ton of grenades, ammunition and heal
 See you on the Von Braun!
 
 [ss-end-screen]: /images/system-shock/ss-end-screen.jpg
-[ss-notes]: /images/system-shock/ss-notes.jpg#+third+right
+[ss-notes]: /images/system-shock/ss-notes.jpg#+third+right+margin
 
 

@@ -306,13 +306,19 @@ article {
   }
 
   img[src*='+left'], figure.left {
-    margin-right: 20px;
     float: left;
   }
 
   img[src*='+right'], figure.right {
-    margin-left: 20px;
     float: right;
+  }
+
+  img[src*='+margin'][src*='+left'], figure.left {
+    margin-right: 20px;
+  }
+
+  img[src*='+margin'][src*='+right'], figure.right {
+    margin-left: 20px;
   }
 
   img[src*='+w300'] {

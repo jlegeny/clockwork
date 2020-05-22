@@ -33,6 +33,6 @@ I lost quite a bit of practice and speed but luckily it's like biking, it eventu
 
 [amzn-cc]: https://www.amazon.fr/Convict-Conditioning-Weakness-Using-Survival-Strength/dp/0938045768
 [darebee]: https://darebee.com/no-equipment-workouts.html
-[ddr-setup]: /images/ddr-at-home/setup.jpg#+third+right
+[ddr-setup]: /images/ddr-at-home/setup.jpg#+third+right+margin
 [ddr-anthem]: /images/ddr-at-home/anthem.jpg
 

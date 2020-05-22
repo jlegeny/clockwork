@@ -48,4 +48,4 @@ And that is all there is to it.
 
 [post-retina-images]: /2018/01/pure-css-solution-to-retina-images-with-a-single-file/
 
-[illustration]: /images/2020-04-27/illustration.jpg#+right+third
+[illustration]: /images/2020-04-27/illustration.jpg#+right+third+margin

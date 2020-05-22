@@ -22,7 +22,7 @@ With Eventail, I have broken this rule in two ways: On top of having many option
 
 ![eventail-settings]
 
-[eventail-settings]: /images/2018-04-20/eventail-settings@3x.png#+right+half
+[eventail-settings]: /images/2018-04-20/eventail-settings@3x.png#+right+half+margin
 
 The ultimate goal of Eventail is to be a perfect calendar widget for the masses. As I have argued in my [article about e-mail clients][cwk-email]: everybody's definition of perfect is different. As such, I have defined two ground rules about the widget which will stay unbroken.
 
@@ -42,6 +42,8 @@ Although this means that Eventail will grow in complexity, it will not have _all
 In the 2.2 version, I have added a thin left border on the events in the default theme. Initially, this was a separate theme because I did not want to get e-mails from people unhappy with the change. In the end I have decided to risk the hit. The new theme is more iOS-like and it makes the choice of the theme simple–just decide whether titles or calendars are more important.
 
 New icons for events were initially optional, there was a fallback to spheres for everything. Again, other applications use spheres all the time, but I wanted the invitations to be distinct. There may be more icons coming for other things. For example would it not be great to see a group of two people when there are just two people in the event?
+
+<c-clear>
 
 [eventail]: https://itunes.apple.com/us/app/eventail/id959674103?ls=1&mt=8&at=1010lIXq
 [cwk-email]: https://yozy.net/2018/03/why-there-is-no-perfect-email-application/
