@@ -371,12 +371,13 @@ aside {
     display: block;
     color: #333;
     margin: 0;
+    margin-top: 10px;
     img {
       float: left;
       margin-right: 10px;
     }
-    caption {
-      font-variant: small-caps;
+    figcaption {
+      margin-left: 42px;
     }
   }
 }
