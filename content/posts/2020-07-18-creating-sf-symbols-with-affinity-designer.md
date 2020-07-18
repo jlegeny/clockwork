@@ -2,7 +2,6 @@
 title: "Creating Sf Symbols with Affinity Designer"
 date: 2020-07-18T19:54:10+02:00
 layout: post
-draft: true
 categories: Eventail
 tags:
   - Swift
