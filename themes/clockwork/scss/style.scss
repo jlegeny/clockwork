@@ -325,11 +325,18 @@ article {
     width: 300px;
   }
 
-  aside.note {
+  aside.note, aside.warning {
     padding: 4px;
-    border: 1px solid #605010;
+    border: 1px solid;
     border-radius: 5px;
-    background: #f0d090;
+    &.note {
+      border-color: #605010;
+      background: #f0d090;
+    }
+    &.warning {
+      border-color: #605010;
+      background: #f0d090;
+    }
   }
 
   .footnotes {
