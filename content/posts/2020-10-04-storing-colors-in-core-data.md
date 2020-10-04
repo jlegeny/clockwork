@@ -2,7 +2,6 @@
 title: "Storing Colors in Core Data—The Whole Story"
 date: 2020-10-04T01:46:42+02:00
 layout: post
-draft: true
 categories: Eventail
 tags:
  - Core Data
