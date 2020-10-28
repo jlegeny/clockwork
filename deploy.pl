@@ -1,5 +1,8 @@
 #!/usr/bin/perl
 
+use Cwd;
+use lib cwd;
+
 use Hugo;
     
 die "Environment not set" unless $ENV{CLOCKWORKSSH};
