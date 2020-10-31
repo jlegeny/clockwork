@@ -18,6 +18,7 @@
     {{ end }}
     <link href="{{ with .OutputFormats.Get "jsonfeed"  }}{{ .Permalink }}{{ end }}" rel="alternate" type="application/json" title="{{ .Site.Title }}" />
     <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
+    <link rel="stylesheet" href="{{ "/css/syntax.css" | relURL }}" />
     <link href="/css/littlefoot.css" rel="preload" as="style" onload="this.rel='stylesheet'">
 
     <link rel="apple-touch-icon" href="/css/images/apple-icon-touch.png">

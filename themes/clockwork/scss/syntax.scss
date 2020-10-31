@@ -35,7 +35,10 @@ $unassigned: #ff0000;
     color: $comment;
   }
 
-  .nx,
+  .nx {
+    color: $default;
+  }
+
   .na,
   .nt,
   .nd, .ne, 
