@@ -6,5 +6,5 @@ use lib dirname(abs_path($0));
 
 use Hugo;
 
-system("${\(hugo_bin())} server --buildDrafts --buildFuture --disableFastRender");
+system("${\(hugo_bin())} server --buildDrafts --buildFuture --disableFastRender --bind 0.0.0.0");
 
