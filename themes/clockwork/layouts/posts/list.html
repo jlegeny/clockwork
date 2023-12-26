@@ -1,23 +1,14 @@
 {{ partial "header.html" . }}
 
-{{if not .IsHome }}
 <h1>{{ .Title }}</h1>
-{{ end }}
 
-{{ .Content }}
-
-
-{{ $paginator := .Paginate (where .Site.RegularPages "Section" "in" (slice "micros"  "posts")) }}
+{{ $paginator := .Paginate (where .Site.RegularPages "Section" "in" (slice "posts")) }}
 
 {{ range $paginator.Pages }}
 <article itemscope itemtype="http://schema.org/BlogPosting">
   <header>
-    {{ if ne .Section "micros" }}
     <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-    {{ end }}
-    {{ if eq .Section "micros" }}<a href="{{ .Permalink }}">{{ end }}
     {{ partial "post/meta.html" . }}
-    {{ if eq .Section "micros" }}</a>{{ end }}
   </header>
 
   {{ partial "post/content.html" . }}
@@ -52,3 +43,4 @@
 </nav>
 
 {{ partial "footer.html" . }}
+

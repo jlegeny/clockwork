@@ -18,6 +18,9 @@ pages = "/pages/:slug"
 [outputs]
 home = ["html", "rss", "jsonfeed"]
 
+[markup.goldmark.renderer]
+unsafe=true
+
 [mediaTypes]
 [mediaTypes."application/rss"]
 suffixes = ["xml"]

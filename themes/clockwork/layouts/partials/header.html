@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+<html lang="{{ site.Language.Lang }}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,16 +7,15 @@
     <meta name="MobileOptimized" content="320">
     <link href="https://micro.blog/yozy" rel="me"/>
 
-    {{ if .IsHome }}
-    <title>{{ .Site.Title }}</title>
+    {{ if eq .Section "home" }}
+    <title>{{ site.Title }}</title>
     {{ else }}
-    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <title>{{ .Title }} | {{ site.Title }}</title>
     {{ end }}
-    {{ if .RSSLink }}
-    <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-    <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+    {{ with .OutputFormats.Get "rss" }}
+      <link href="{{ .RelPermalink }}" rel="alternate" type="{{ .MediaType.Type }}" title="{{ site.Title }}" />
     {{ end }}
-    <link href="{{ with .OutputFormats.Get "jsonfeed"  }}{{ .Permalink }}{{ end }}" rel="alternate" type="application/json" title="{{ .Site.Title }}" />
+    <link href="{{ with .OutputFormats.Get "json" }}{{ .RelPermalink }}{{ end }}" rel="alternate" type="{{ with .OutputFormats.Get "json" }}{{ .MediaType.Type }}{{ end }}" title="{{ site.Title }}" />
     <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
     <link rel="stylesheet" href="{{ "/css/syntax.css" | relURL }}" />
     <link href="/css/littlefoot.css" rel="preload" as="style" onload="this.rel='stylesheet'">
@@ -41,3 +40,4 @@
 
     <div id="content">
       <main role="main">
+
