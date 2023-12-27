@@ -2,7 +2,6 @@
 title: "Caesar Salad"
 date: 2023-12-27T01:03:59+01:00
 layout: post
-draft: true
 categories: Culinary Recipes
 tags:
  - Food
