@@ -1,0 +1,12 @@
+name = "Clockwork 2 Theme"
+license = "MIT"
+licenselink = "https://github.com/theNewDynamic/gohugo-theme-ananke/blob/master/LICENSE.md"
+description = "Theme for yozy.net, derived from ananke"
+homepage = "https://github.com/jlegeny/clockwork"
+tags = ["website", "starter", "responsive", "Disqus", "blog", "Tachyons", "Multilingual", "Stackbit"]
+features = ["posts", "shortcodes", "related content", "comments"]
+min_version = "0.84.0"
+
+[author]
+  name = "yozy"
+  homepage = "https://yozy.net/"

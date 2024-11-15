@@ -1,9 +1,10 @@
 baseURL = "https://yozy.net/"
 languageCode = "en-us"
 title = "yozy//NET"
-theme = "clockwork"
+theme = "clockwork2"
 
-paginate = 10
+[pagination]
+pagerSize = 10
 
 pygmentsCodeFences = true
 pygmentsCodeFencesGuessSyntax = true
@@ -16,7 +17,7 @@ micros = "/micro/:filename/"
 pages = "/pages/:slug"
 
 [outputs]
-home = ["html", "rss", "jsonfeed"]
+home = ["html", "rss"]
 
 [markup.goldmark.renderer]
 unsafe=true
@@ -25,19 +26,11 @@ unsafe=true
 [mediaTypes."application/rss"]
 suffixes = ["xml"]
 
-[mediaTypes."application/json"]
-suffixes = ["json"]
-
 [outputFormats]
 
 [outputFormats.rss]
 mediatype = "application/rss"
 baseName = "feed"
-
-[outputFormats.jsonfeed]
-mediaType = "application/json"
-baseName = "feed"
-isPlainText = true
 
 [privacy.youtube]
 disable = false
