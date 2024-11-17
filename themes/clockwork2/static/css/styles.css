@@ -1,8 +1,56 @@
+:root {
+  --img-margin: 20px;
+}
+
 html, body {
   padding: 0;
   margin: 0;
 }
+
+article {
+  code {
+    text-indent: 1em;
+    text-wrap-mode: wrap;
+    text-wrap-style: balance;
+  }
+}
+
 img {
   max-width: 100%;
   height: auto;
+
+  &[src*='@2x'] {
+    zoom: 50%;
+  }
+
+  &[src*='@3x'] {
+    zoom: 33.333%;
+  }
+
+  &[src*='+twoth'] {
+    width: 66.66%;
+  }
+  
+  &[src*='+half'] {
+    width: 50%;
+  }
+  
+  &[src*='+third'] {
+    width: 33.33%;
+  }
+  
+  &[src*='+left'] {
+    float: left;
+    &[src*='+margin'] {
+      margin-right: var(--img-margin);
+    }
+  }
+
+  &[src*='+right'] {
+    float: right;
+    &[src*='+margin'] {
+      margin-left: var(--img-margin);
+    }
+  }
+
 }

@@ -21,24 +21,24 @@
           {{ end }}
 
         {{ if ge $section_count (add $n_posts 1) }}
-        <section>
+        <aside>
           <h1>{{ i18n "more" }}</h1>
           {{/* Now, range through the next four after the initial $n_posts items. Nest the requirements, "after" then "first" on the outside */}}
           <ul>
-          {{ range (first 4 (after $n_posts $section))  }}
+            {{ range (first 4 (after $n_posts $section))  }}
             <li>
               <a href="{{ .RelPermalink }}">
                 {{ .Title }}
               </a>
             </li>
-          {{ end }}
+            {{ end }}
           </ul>
 
           {{/* As above, Use $section_name to get the section title, and URL. Use "with" to only show it if it exists */}}
           {{ with $.Site.GetPage "section" $section_name }}
             <a href="{{ .RelPermalink }}">{{ i18n "allTitle" . }}</a>
           {{ end }}
-        </section>
+        </aside>
         {{ end }}
     {{ end }}
   {{ end }}

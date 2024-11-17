@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.Language.LanguageCode }}" {{- with partialCached "func/GetLanguageDirection" "GetLanguageDirection" }} dir="{{ . }}" {{- end }}>
+<html lang="{{ site.Language.LanguageCode }}">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -26,8 +26,10 @@
       ">
     {{ end }}
 
-    {{ partial "site-style.html" . }}
-    {{ partial "site-scripts.html" . }}
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/littlefoot.css" />
+    <link rel="stylesheet" href="/css/syntax.css" />
+    <script src="/js/littlefoot.min.js"></script>
 
     {{ block "favicon" . }}
       {{ partialCached "site-favicon.html" . }}
@@ -57,10 +59,9 @@
 	{{ block "head" . }}{{ partial "head-additions.html" . }}{{ end }}
   </head>
 
-  <body class="ma0 {{ $.Param "body_classes"  | default "avenir bg-near-white"}}{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
-
+  <body>
     {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
-    <main class="pb7" role="main">
+    <main>
       {{ block "main" . }}{{ end }}
     </main>
     {{ block "footer" . }}{{ partialCached "site-footer.html" . }}{{ end }}
