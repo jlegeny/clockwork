@@ -20,6 +20,8 @@ pages = "/pages/:slug"
 home = ["html", "rss"]
 
 [markup]
+  [markup.goldmark.renderer]
+    unsafe = true
   [markup.highlight]
     anchorLineNos = false
     codeFences = true
