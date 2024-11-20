@@ -27,9 +27,8 @@
     {{ end }}
 
     <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="stylesheet" href="/css/littlefoot.css" />
     <link rel="stylesheet" href="/css/syntax.css" />
-    <script src="/js/littlefoot.min.js"></script>
+    <link rel="stylesheet" href="/css/littlefoot.css" />
 
     {{ block "favicon" . }}
       {{ partialCached "site-favicon.html" . }}
@@ -66,4 +65,6 @@
     </main>
     {{ block "footer" . }}{{ partialCached "site-footer.html" . }}{{ end }}
   </body>
+
+
 </html>

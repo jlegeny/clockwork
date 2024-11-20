@@ -9,24 +9,28 @@
       <h1>
         {{- .Title -}}
       </h1>
-      {{/* Hugo uses Go's date formatting is set by example. Here are two formats */}}
-      {{ if not .Date.IsZero }}
-      <time {{ printf `datetime="%s"` (.Date.Format "2006-01-02T15:04:05Z07:00") | safeHTMLAttr }}>
-        {{- .Date | time.Format (default "2006-01-02" .Site.Params.date_format) -}}
-      </time>
-      {{end}}
-
-      <span class="f6 mv4 dib tracked"> - {{ i18n "readingTime" .ReadingTime }} </span>
-      <span class="f6 mv4 dib tracked"> - {{ i18n "wordCount" .WordCount }} </span>
+      {{- partial "post/meta.html" . -}}
     </header>
     <div>
       {{- partial "post/content.html" . -}}
-      {{- partial "tags.html" . -}}
     </div>
 
     <aside>
+      {{- partial "tags.html" . -}}
       {{- partial "menu-contextual.html" . -}}
     </aside>
 
   </article>
+  <script src="/js/littlefoot.min.js" type="application/javascript"></script>
+  <script type="application/javascript">
+  littlefoot.littlefoot({
+    buttonTemplate: `<button
+      aria-label="Footnote <% number %>"
+      class="littlefoot__button"
+      id="<% reference %>"
+      title="See Footnote <% number %>"/>
+        <% number %>
+      </button>`
+  })
+  </script>
 {{ end }}

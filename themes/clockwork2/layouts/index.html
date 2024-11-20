@@ -1,46 +1,42 @@
 {{ define "main" }}
-    {{/* Define a section to pull recent posts from. For Hugo 0.20 this will default to the section with the most number of pages. */}}
-    {{ $mainSections := .Site.Params.mainSections | default (slice "post") }}
-    
-    {{/* Check to see if the section is defined for ranging through it */}}
-    {{range ($mainSections)}}
-    {{/* Derive the section name  */}}
-    {{ $section_name := . }}
-    {{/* Create a variable with that section to use in multiple places. */}}
-    {{ $section := where $.Site.RegularPages "Section" "in" $section_name }}
-    {{ $section_count := len $section }}
-    {{ if ge $section_count 1 }}
-        {{ $n_posts := $.Param "recent_posts_number" | default 3 }}
+  {{/* Define the sections you want to include */}}
+  {{ $sections := (slice "posts" "micros") }}
+  
+  {{/* Collect all pages from the specified sections */}}
+  {{ $pages := where .Site.RegularPages "Section" "in" $sections }}
+  
+  {{/* Sort the pages by date in descending order */}}
+  {{ $sortedPages := sort $pages "Date" "desc" }}
+  
+  {{/* Determine the number of recent posts to display */}}
+  {{ $n_posts := $.Param "recent_posts_number" | default 5 }}
+  
+  {{/* Display the first $n_posts pages */}}
+  {{ range first $n_posts $sortedPages }}
+    <article>
+      <header>
+        <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+        {{- partial "post/meta.html" . -}}
+      </header>
 
-          {{/* Range through the first $n_posts items of the section */}}
-          {{ range (first $n_posts $section) }}
-            <article>
-              <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
-              {{ .Content }}
-            </article>
-          {{ end }}
 
-        {{ if ge $section_count (add $n_posts 1) }}
-        <aside>
-          <h1>{{ i18n "more" }}</h1>
-          {{/* Now, range through the next four after the initial $n_posts items. Nest the requirements, "after" then "first" on the outside */}}
-          <ul>
-            {{ range (first 4 (after $n_posts $section))  }}
-            <li>
-              <a href="{{ .RelPermalink }}">
-                {{ .Title }}
-              </a>
-            </li>
-            {{ end }}
-          </ul>
-
-          {{/* As above, Use $section_name to get the section title, and URL. Use "with" to only show it if it exists */}}
-          {{ with $.Site.GetPage "section" $section_name }}
-            <a href="{{ .RelPermalink }}">{{ i18n "allTitle" . }}</a>
-          {{ end }}
-        </aside>
-        {{ end }}
-    {{ end }}
+      {{ .Content }}
+    </article>
   {{ end }}
-{{end}}
-    
+  
+  {{/* Check if there are more posts to display in the "more" section */}}
+  {{ $remainingPosts := (after $n_posts $sortedPages) }}
+  {{ if gt (len $remainingPosts) 0 }}
+    <aside>
+      <h1>{{ i18n "more" }}</h1>
+      <ul>
+        {{/* Display the next 4 posts */}}
+        {{ range first 4 $remainingPosts }}
+          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+      <a href="/posts/">All Posts</a>
+    </aside>
+  {{ end }}
+{{ end }}
+

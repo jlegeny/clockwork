@@ -4,9 +4,7 @@
       <article>
         <header>
           <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
-          <time {{ printf `datetime="%s"` (.Date.Format "2006-01-02T15:04:05Z07:00") | safeHTMLAttr }}>
-          {{- .Date | time.Format (default "2006-01-02" .Site.Params.date_format) -}}
-          </time>
+          {{- partial "post/meta.html" . -}}
         </header>
         {{- partial "post/content.html" . -}}
       </article>
