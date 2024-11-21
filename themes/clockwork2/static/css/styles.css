@@ -4,6 +4,7 @@
   --d-xs: 4px;
   --header-color:         #333;
   --text-color:           #000;
+  --primary-color:        #f50;
   --link-color-visited:   rebeccapurple;
   --kbd-background:       #ddd;
   --kbd-color:            var(--text-color);
@@ -35,9 +36,24 @@ body {
     background: black;
     text-align: center;
     padding: var(--d-xs);
+    line-height: 2;
     a {
-      color: white;
+      color: var(--primary-color);
       text-decoration: none;
+    }
+    div {
+      display: flex;
+      justify-content: center;
+      gap: var(--d-m);
+      a {
+        color: white;
+        display: flex;
+        align-items: center;
+        img {
+          width: 32px;
+          height: 32px;
+        }
+      }
     }
   }
   > footer {
@@ -181,10 +197,11 @@ article {
     display: block;
     width: 90vw;
     height: 1px;
-    background: #666;
     margin: 40px auto;
     max-width: 13cm;
+    background-color: #666;
   }
+
 
   img {
     max-width: 100%;
@@ -242,7 +259,7 @@ article {
         text-decoration: none;
       }
       &.active a {
-        color: orange;
+        color: var(--primary-color);
       }
     }
   }
