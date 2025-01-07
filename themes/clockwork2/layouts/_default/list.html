@@ -1,14 +1,14 @@
 {{ define "main" }}
     <section>
-      {{ range .Paginator.Pages }}
       <article>
-        <header>
-          <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
-          {{- partial "post/meta.html" . -}}
-        </header>
-        {{- partial "post/content.html" . -}}
+      <ul>
+        {{ range .Paginator.Pages }}
+        <li><a href="{{ .RelPermalink }}">
+            <time datetime="{{ .Date.Format "2006-01-02"}}">{{ .Date.Format "2006-01-02" }}</time> — 
+            {{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+      {{- template "_internal/pagination.html" . -}}
       </article>
-      {{ end }}
     </section>
-    {{- template "_internal/pagination.html" . -}}
 {{ end }}
