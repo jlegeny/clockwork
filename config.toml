@@ -4,7 +4,7 @@ title = "yozy//NET"
 theme = "clockwork2"
 
 [pagination]
-pagerSize = 20
+pagerSize = 40
 
 pygmentsCodeFences = true
 pygmentsCodeFencesGuessSyntax = true
