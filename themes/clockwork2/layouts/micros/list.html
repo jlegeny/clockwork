@@ -1,0 +1,19 @@
+{{ define "main" }}
+    <section>
+      <article>
+      <ul>
+        {{ range .Paginator.Pages.GroupByDate "2006-01" }}
+        <li>{{ .Key }}
+        <ul>
+          {{ range .Pages }}
+        <li><a href="{{ .RelPermalink }}">
+            {{ .Date.Format "2006-01-02 15:04" }}</a>{{ .Content }}</li>
+        {{ end }}
+        </ul>
+        </li>
+        {{ end }}
+      </ul>
+      {{- template "_internal/pagination.html" . -}}
+      </article>
+    </section>
+{{ end }}

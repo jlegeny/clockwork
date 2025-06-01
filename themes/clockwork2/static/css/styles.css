@@ -33,6 +33,10 @@ html, body {
 }
 
 body {
+  .header {
+    background: black;
+    color: white;
+  }
   > header {
     background: black;
     text-align: center;

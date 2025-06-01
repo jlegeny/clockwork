@@ -15,8 +15,14 @@
   {{ range first $n_posts $sortedPages }}
     <article>
       <header>
+        {{ if eq .Type "micros" }}
+        <a class="header" href="{{ .RelPermalink }}">
+          {{- partial "post/meta.html" . -}}
+        </a>
+        {{ else }}
         <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
         {{- partial "post/meta.html" . -}}
+        {{ end }}
       </header>
 
 
@@ -26,22 +32,22 @@
       </aside>
 
     </article>
-  {{ end }}
-  
-  {{/* Check if there are more posts to display in the "more" section */}}
-  {{ $remainingPosts := (after $n_posts $sortedPages) }}
-  {{ if gt (len $remainingPosts) 0 }}
+    {{ end }}
+
+    {{/* Check if there are more posts to display in the "more" section */}}
+    {{ $remainingPosts := (after $n_posts $sortedPages) }}
+    {{ if gt (len $remainingPosts) 0 }}
     <aside>
       <h1>{{ i18n "more" }}</h1>
       <ul>
         {{/* Display the next 4 posts */}}
         {{ range first 4 $remainingPosts }}
-          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
         {{ end }}
       </ul>
       <a href="/posts/">All Posts</a>
       <a href="/categories/">Categories</a>
     </aside>
-  {{ end }}
-{{ end }}
+    {{ end }}
+    {{ end }}
 
